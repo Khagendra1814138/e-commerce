@@ -36,3 +36,202 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+
+.windowFrame{
+  height: 300px;
+  width: 300px;
+  background-color: royalblue;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  box-shadow: 0px 4px 8px rgb(22, 22, 22);
+  transition: all 0.8s ease;
+  cursor: pointer;
+  overflow: hidden;
+
+  .windowDoorL{
+      height: 300px;
+      width: 150px;
+      background: #4f758b;
+      display: flex;
+      margin: auto;
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      transition: all 0.8s ease;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+  }
+  .windowDoorR{
+      height: 300px;
+      width: 150px;
+      background: #4f758b;
+      display: flex;
+      margin: auto;
+      position: absolute;
+      z-index: 1;
+      right: 0;
+      transition: all 0.8s ease;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+  }
+}
+
+
+.windowFrame:hover .windowDoorL{
+  transform: translate(-150px, 0rem);
+}
+.windowFrame:hover .windowDoorR{
+  transform: translate(150px, 0rem);
+}
+
+
+
+
+
+.cameraLenseFrame{
+  height: 300px;
+  width: 300px;
+  background: #41667c;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0px 4px 8px rgb(22, 22, 22);
+  transition: all 0.8s ease;
+  cursor: pointer;
+  overflow: hidden;
+
+  .coverTL{
+      height: 150px;
+      width: 150px;
+      background-color: aqua;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 0.8s ease;
+  }
+
+  .coverTR{
+      height: 150px;
+      width: 150px;
+      background-color: teal;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transition: all 0.8s ease;
+  }
+
+  .coverBL{
+      height: 150px;
+      width: 150px;
+      background-color: aquamarine;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transition: all 0.8s ease;
+  }
+
+  .coverBR{
+      height: 150px;
+      width: 150px;
+      background-color: turquoise;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transition: all 0.8s ease;
+  }
+}
+.cameraLenseFrame:hover{
+  box-shadow: none;
+}
+
+.cameraLenseFrame:hover .coverTL{
+  transform: translate(0px, -150px);
+}
+
+.cameraLenseFrame:hover .coverTR{
+  transform: translate(150px, 0px);
+}
+
+.cameraLenseFrame:hover .coverBL{
+  transform: translate(-150px, 0px);
+}
+
+.cameraLenseFrame:hover .coverBR{
+  transform: translate(0px, 150px);
+}
+
+
+.showAnimateEndangeredSpecies{
+  opacity: 1;
+  transform: translateY(0);
+  transform: translateX(0px);
+}
+
+
+
+
+.wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+
+  border: 1px solid red;
+}
+
+.things {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.background {
+  position: absolute;
+  height: 600px;
+  width: 100%;
+  z-index: -1;
+  margin: auto;
+
+  transform: translateZ(-10px) scale(2);
+
+  font-size: 6rem;
+  padding: 2rem;
+  color: rebeccapurple;
+  background-color: royalblue;
+}
+
+.foreground {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  margin: auto;
+
+  transform: translateZ(-5px) scale(1.5);
+
+  font-size: 6rem;
+  padding: 2rem;
+  color: white;
+  background-color: salmon;
+}
+
+
+.title {
+  font-size: 7rem;
+  color: white;
+  text-shadow: 0 0 5px black;;
+}

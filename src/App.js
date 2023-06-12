@@ -7,16 +7,31 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          This is an E-Commerce Front-end. Still in progress...
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+       
+       
+        <div className="windowFrame"> This is the window/Curtin.
+            <div className="windowDoorL"></div>
+            <div className="windowDoorR"></div>
+        </div>
+
+        <div className="cameraLenseFrame"> Camera Open Lense.
+            <div className="coverTL"></div>
+            <div className="coverTR"></div>
+            <div className="coverBL"></div>
+            <div className="coverBR"></div>
+        </div>
+
+        
+        <div class="wrapper">
+            <header className="things">
+                <image class="background">Background</image>
+                <image class="foreground">Foreground</image>
+                <h class="title">Welcome!</h>
+            </header>
+        </div>
+
       </header>
     </div>
   );
