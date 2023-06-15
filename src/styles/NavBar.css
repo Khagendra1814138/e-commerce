@@ -39,13 +39,12 @@
 }
 
 .TrendingSection{
-    height: 45rem;
+    height: 40rem;
     width: auto;
     margin: auto;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    border: 1px solid rosybrown;
 
     .trendingInfo{
         height: 100%;
@@ -57,13 +56,42 @@
         background-color: rosybrown;
     }
     .trendingProductsFrame{
-        height: 100%;;
-        width: 100%;;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: burlywood;
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 27%;
+        gap: 2rem;
+
+        overflow-y: hidden;
+        overflow-x: scroll;
+        overscroll-behavior-inline: contain;
     }
+}
+
+/* CUSTOME SCROOL BAR */
+.trendingProductsFrame::-webkit-scrollbar {
+    height: 1rem;
+  }
+  
+  .trendingProductsFrame::-webkit-scrollbar-track {
+    background: slategray;
+  }
+  
+  .trendingProductsFrame::-webkit-scrollbar-thumb {
+    background-color: thistle;
+    border-radius: 10px;
+  }
+  
+  .trendingProductsFrame::-webkit-scrollbar-thumb:hover {
+    background: hsl(120 100% 10% / 1);
+  }
+
+
+
+.card{
+    display: flex;
+    background-color: #EFEFED;
 }
 
 .whoForSection{
