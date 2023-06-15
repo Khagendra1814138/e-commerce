@@ -1,5 +1,5 @@
 import '../../App.css';
-import "../../styles/Navbar.css"
+import "../../styles/Navbar.css";
 import logo from '../../logo.svg';
 
 function Home() {
