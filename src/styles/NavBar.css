@@ -6,6 +6,16 @@
     padding: 10px;
     background: rebeccapurple;
 
+    .siteLogo{
+        height: 60px;
+        width: 60px;
+        display: flex;
+    
+        justify-content: flex-start;
+        align-items: center;
+        border: 1px solid red;
+    }
+
     .Navlists{
         list-style-type: none;
         height: auto;
@@ -23,103 +33,5 @@
         color: white;
     }.links:hover{
         color: royalblue;
-    }
-}
-
-.siteLogo{
-    height: 60px;
-    width: 60px;
-    display: flex;
-
-    justify-content: flex-start;
-    align-items: center;
-    border: 1px solid red;
-}
-
-
-.header{
-    height: 60rem;
-    width: auto;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid green;
-}
-
-.TrendingSection{
-    height: 40rem;
-    width: auto;
-    margin: auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
-    .trendingInfo{
-        height: 100%;
-        width: 30rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: rosybrown;
-    }
-    .trendingProductsFrame{
-        height: 100%;
-        width: 100%;
-        display: grid;
-        grid-auto-flow: column;
-        grid-auto-columns: 27%;
-        gap: 2rem;
-
-        overflow-y: hidden;
-        overflow-x: scroll;
-        overscroll-behavior-inline: contain;
-    }
-}
-
-/* CUSTOME SCROOL BAR */
-.trendingProductsFrame::-webkit-scrollbar {
-    height: 1rem;
-  }
-  
-  .trendingProductsFrame::-webkit-scrollbar-track {
-    background: slategray;
-  }
-  
-  .trendingProductsFrame::-webkit-scrollbar-thumb {
-    background-color: thistle;
-    border-radius: 10px;
-  }
-  
-  .trendingProductsFrame::-webkit-scrollbar-thumb:hover {
-    background: hsl(120 100% 10% / 1);
-  }
-
-
-
-.card{
-    display: flex;
-    background-color: #EFEFED;
-}
-
-.whoForSection{
-    height: 45rem;
-    width: auto;
-    margin: auto;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    border: 1px solid red;
-
-    .whoForChoicesFrame{
-        height: 35rem;
-        width: 30rem;
-        margin: auto;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        border: 1px solid royalblue;
-        border-radius: 1rem;
     }
 }

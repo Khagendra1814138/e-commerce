@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../App.css';
+import "../../styles/HomePage.css";
 import logo from '../../logo.svg';
 
 function Home() {
