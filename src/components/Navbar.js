@@ -1,4 +1,6 @@
+import React from "react";
 import "../styles/Navbar.css";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
@@ -6,10 +8,10 @@ function NavBar() {
         <logo className="siteLogo">Logo</logo>
 
         <ul className='Navlists'>
-          <li>New Arrivals</li>
-          <li>Mens</li>
-          <li>Womens</li>
-          <li>Kids</li>
+          <Link exact to="/" className="links">Home</Link>
+          <Link exact to="Men" className="links">Mens</Link>
+          <Link exact to="Women" className="links">Women</Link>
+          <Link exact to="Kids" className="links">Kids</Link>
         </ul>
 
     </nav>
