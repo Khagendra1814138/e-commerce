@@ -19,6 +19,9 @@ code {
 button{
   border: none;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 150px;
   padding: 10px;
   cursor: pointer;
