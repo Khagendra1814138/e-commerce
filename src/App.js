@@ -8,6 +8,7 @@ import Home from "./pages/Home/Home";
 import MensPage from './pages/MenSection/Men';
 import KidsPage from './pages/KidSection/Kids';
 import WomensPage from './pages/WomenSection/Women';
+import NewArrivals from './pages/NewSection/NewArrivals';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path='/' element={<Home/>} />
+          <Route path='/NewArrivals' element={<NewArrivals/>} />
           <Route path='/Men' element={<MensPage/>} />
           <Route path='/Women' element={<WomensPage/>} />
           <Route path='/Kids' element={<KidsPage/>} />
