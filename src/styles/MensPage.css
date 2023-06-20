@@ -1,7 +1,87 @@
 
 .MenPage{
-    height: 100vh;
+    height: auto;
     width: auto;
-    overflow: hidden;
+    margin: auto;
     background-color: royalblue;
+    padding-bottom: 10rem;
+    display: grid;
+    gap: 10rem;
+}
+
+
+.mensHeader{
+    border: 1px solid rosybrown;
+
+    .focusedProduct{
+        height: 50rem;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        border: 1px solid rebeccapurple;
+    }
+}
+
+
+.trendingThisWeekSection{
+    height: auto;
+    width: 95%;
+    margin: auto;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid red;
+
+    .mensTrendingProductsFrame{
+        height: 35rem;
+        width: auto;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 27%;
+        gap: 2rem;
+
+        overflow-y: hidden;
+        overflow-x: scroll;
+        overscroll-behavior-inline: contain;
+        border: 1px solid gold;
+    }
+
+    .mensTrendingCards{
+        display: flex;
+        background-color: #EFEFED;
+    }
+}
+
+.mensTrendingCards{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    background-color: #EFEFED;
+}
+
+/* CUSTOME SCROOL BAR */
+.mensTrendingProductsFrame::-webkit-scrollbar {
+    height: 1rem;
+  }
+  
+  .mensTrendingProductsFrame::-webkit-scrollbar-track {
+    background: slategray;
+  }
+  
+  .mensTrendingProductsFrame::-webkit-scrollbar-thumb {
+    background-color: thistle;
+    border-radius: 10px;
+  }
+  
+  .mensTrendingProductsFrame::-webkit-scrollbar-thumb:hover {
+    background: hsl(120 100% 10% / 1);
+  }
+
+
+.productDisplayFrame{
+    width: 95%;
+    margin: auto;
+    border: 1px solid yellowgreen;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto;
 }
