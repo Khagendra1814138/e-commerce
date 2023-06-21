@@ -1,0 +1,59 @@
+
+.sideFilterFrame{
+    height: 57rem;
+    min-width: 18rem;
+    padding: 2rem;
+
+    display: grid;
+    grid-auto-flow: row;
+    gap: 2rem;
+/* 
+    border-top: 1px solid red;
+    border-bottom: 1px solid red; */
+    text-align: center;
+    background-color: white;
+    
+    position: sticky;
+    top: 0px;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+    overscroll-behavior-inline: contain;
+
+
+    .filterOptions{
+        height: 20rem;
+        padding: 1rem;
+        border-top: 2px solid #E5E5E5;
+        font-size: 18px;
+        font-weight: bold;
+        padding-top: 0.5rem;
+        color: slategray;
+        text-align: start;
+    }
+}
+
+    /* CUSTOME SCROOL BAR */
+.sideFilterFrame::-webkit-scrollbar {
+    height: 1rem;
+}
+
+.sideFilterFrame::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sideFilterFrame::-webkit-scrollbar-thumb {
+    background-color: #7F7F7F;
+    border-radius: 10px;
+}
+
+.sideFilterFrame::-webkit-scrollbar-thumb:hover {
+    background: hsl(120 100% 10% / 1);
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .sideFilterFrame {
+        display: none;
+    }
+}

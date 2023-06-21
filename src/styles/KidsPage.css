@@ -1,7 +1,11 @@
 
 .KidsPage{
-    height: 100vh;
+    height: auto;
     width: auto;
-    overflow: hidden;
+    margin: auto;
+
     background-color: bisque;
+    padding-bottom: 10rem;
+    display: grid;
+    gap: 10rem;
 }

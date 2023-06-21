@@ -6,7 +6,6 @@
     display: flex;
     padding: 10px;
     background: rebeccapurple;
-    position: sticky;
 
     .siteLogo{
         height: 60px;

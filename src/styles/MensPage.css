@@ -3,6 +3,7 @@
     height: auto;
     width: auto;
     margin: auto;
+
     background-color: royalblue;
     padding-bottom: 10rem;
     display: grid;
@@ -11,38 +12,40 @@
 
 
 .mensHeader{
-    border: 1px solid rosybrown;
+    border-top: 1px solid rosybrown;
+    border-bottom: 1px solid rosybrown;
 
     .focusedProduct{
         height: 50rem;
         width: 90%;
         margin: auto;
         display: flex;
-        border: 1px solid rebeccapurple;
+        border-top: 1px solid rosybrown;
+        border-bottom: 1px solid rosybrown;
     }
 }
 
 
 .trendingThisWeekSection{
     height: auto;
-    width: 95%;
+    min-width: 100%;
     margin: auto;
     justify-content: flex-start;
     align-items: center;
-    border: 1px solid red;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
 
     .mensTrendingProductsFrame{
         height: 35rem;
         width: auto;
         display: grid;
         grid-auto-flow: column;
-        grid-auto-columns: 27%;
+        grid-auto-columns: 23%;
         gap: 2rem;
 
         overflow-y: hidden;
         overflow-x: scroll;
         overscroll-behavior-inline: contain;
-        border: 1px solid gold;
     }
 
     .mensTrendingCards{
@@ -52,8 +55,6 @@
 }
 
 .mensTrendingCards{
-    height: 100px;
-    width: 100px;
     display: flex;
     background-color: #EFEFED;
 }
@@ -77,11 +78,3 @@
   }
 
 
-.productDisplayFrame{
-    width: 95%;
-    margin: auto;
-    border: 1px solid yellowgreen;
-    display: grid;
-    grid-template-rows: auto auto auto;
-    grid-template-columns: auto;
-}
