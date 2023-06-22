@@ -3,6 +3,7 @@ import React from "react";
 import "../../styles/MensPage.css";
 import "../../styles/SideFilter.css";
 import "../../styles/ProductCard.css";
+import "../../styles/CSScomponents/Trending.css"
 
 
 function MensPage() {
@@ -15,16 +16,16 @@ function MensPage() {
         </header> */}
 
         <section className="trendingThisWeekSection">
-          <h1>Trending This Week</h1>
-          <div className='mensTrendingProductsFrame'>
-            <div className='mensTrendingCards'>1</div>
-            <div className='mensTrendingCards'>2</div>
-            <div className='mensTrendingCards'>3</div>
-            <div className='mensTrendingCards'>4</div>
-            <div className='mensTrendingCards'>5</div>
-            <div className='mensTrendingCards'>6</div>
-            <div className='mensTrendingCards'>7</div>
-            <div className='mensTrendingCards'>8</div>
+          <h1>Mens Trending This Week</h1>
+          <div className='trendingProductsFrame'>
+            <div className='trendingCards'>1</div>
+            <div className='trendingCards'>2</div>
+            <div className='trendingCards'>3</div>
+            <div className='trendingCards'>4</div>
+            <div className='trendingCards'>5</div>
+            <div className='trendingCards'>6</div>
+            <div className='trendingCards'>7</div>
+            <div className='trendingCards'>8</div>
             </div>
         </section>
 

@@ -29,9 +29,17 @@ function Home() {
 
       <h1>Who are you shoipping for?</h1>
       <section className='whoForSection'>
-        <div className='whoForChoicesFrame'>Men</div>
-        <div className='whoForChoicesFrame'>Women</div>
-        <div className='whoForChoicesFrame'>Kid</div>
+        <div className='whoForChoicesFrame'>Men
+          <button>Shop</button>
+        </div>
+
+        <div className='whoForChoicesFrame'>Women
+          <button>Shop</button>
+        </div>
+
+        <div className='whoForChoicesFrame'>Kid
+          <button>Shop</button>
+        </div>
       </section>
 
 

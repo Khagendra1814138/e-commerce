@@ -3,10 +3,25 @@ import React from "react";
 import "../../styles/WomensPage.css";
 import "../../styles/SideFilter.css";
 import "../../styles/ProductCard.css";
+import "../../styles/CSScomponents/Trending.css"
 
 function WomensPage() {
     return (
       <div className="WomensPage">
+
+        <section className="trendingThisWeekSection">
+          <h1>Womens Trending This Week</h1>
+          <div className='trendingProductsFrame'>
+            <div className='trendingCards'>1</div>
+            <div className='trendingCards'>2</div>
+            <div className='trendingCards'>3</div>
+            <div className='trendingCards'>4</div>
+            <div className='trendingCards'>5</div>
+            <div className='trendingCards'>6</div>
+            <div className='trendingCards'>7</div>
+            <div className='trendingCards'>8</div>
+            </div>
+        </section>
 
         <h1>WOMENS FOOTWARE</h1>
 

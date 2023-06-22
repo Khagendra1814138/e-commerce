@@ -1,0 +1,51 @@
+.trendingThisWeekSection{
+    height: auto;
+    width: 98%;
+    margin: auto;
+    justify-content: flex-start;
+    align-items: center;
+
+    .trendingProductsFrame{
+        height: 35rem;
+        width: auto;
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 33%;
+        gap: 2rem;
+
+        overflow-y: hidden;
+        overflow-x: scroll;
+        overscroll-behavior-inline: contain;
+
+        scroll-snap-type: x mandatory;
+    }
+
+    .trendingProductsFrame > * {
+        scroll-snap-align: start;
+    }
+
+    .trendingCards{
+        display: flex;
+        background-color: #EFEFED;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* CUSTOME SCROOL BAR */
+.trendingProductsFrame::-webkit-scrollbar {
+    height: 1rem;
+}
+
+.trendingProductsFrame::-webkit-scrollbar-track {
+    background: slategray;
+}
+
+.trendingProductsFrame::-webkit-scrollbar-thumb {
+    background-color: thistle;
+    border-radius: 10px;
+}
+
+.trendingProductsFrame::-webkit-scrollbar-thumb:hover {
+    background: hsl(120 100% 10% / 1);
+}

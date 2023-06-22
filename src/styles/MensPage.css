@@ -5,6 +5,7 @@
     margin: auto;
 
     background-color: royalblue;
+    padding-top: 10rem;
     padding-bottom: 10rem;
     display: grid;
     gap: 10rem;
@@ -25,56 +26,5 @@
     }
 }
 
-
-.trendingThisWeekSection{
-    height: auto;
-    min-width: 100%;
-    margin: auto;
-    justify-content: flex-start;
-    align-items: center;
-    border-top: 1px solid red;
-    border-bottom: 1px solid red;
-
-    .mensTrendingProductsFrame{
-        height: 35rem;
-        width: auto;
-        display: grid;
-        grid-auto-flow: column;
-        grid-auto-columns: 23%;
-        gap: 2rem;
-
-        overflow-y: hidden;
-        overflow-x: scroll;
-        overscroll-behavior-inline: contain;
-    }
-
-    .mensTrendingCards{
-        display: flex;
-        background-color: #EFEFED;
-    }
-}
-
-.mensTrendingCards{
-    display: flex;
-    background-color: #EFEFED;
-}
-
-/* CUSTOME SCROOL BAR */
-.mensTrendingProductsFrame::-webkit-scrollbar {
-    height: 1rem;
-  }
-  
-  .mensTrendingProductsFrame::-webkit-scrollbar-track {
-    background: slategray;
-  }
-  
-  .mensTrendingProductsFrame::-webkit-scrollbar-thumb {
-    background-color: thistle;
-    border-radius: 10px;
-  }
-  
-  .mensTrendingProductsFrame::-webkit-scrollbar-thumb:hover {
-    background: hsl(120 100% 10% / 1);
-  }
 
 
