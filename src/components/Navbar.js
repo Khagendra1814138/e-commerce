@@ -13,6 +13,7 @@ function NavBar() {
           <Link exact to="Men" className="links">Mens</Link>
           <Link exact to="Women" className="links">Women</Link>
           <Link exact to="Kids" className="links">Kids</Link>
+          <Link exact to="Cart" className="links">Cart</Link>
         </ul>
 
     </nav>

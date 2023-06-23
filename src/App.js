@@ -9,6 +9,7 @@ import MensPage from './pages/MenSection/Men';
 import KidsPage from './pages/KidSection/Kids';
 import WomensPage from './pages/WomenSection/Women';
 import NewArrivals from './pages/NewSection/NewArrivals';
+import CartPage from './pages/Cart/Cart';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path='/Men' element={<MensPage/>} />
           <Route path='/Women' element={<WomensPage/>} />
           <Route path='/Kids' element={<KidsPage/>} />
+          <Route path='/Cart' element={<CartPage/>} />
         </Routes>
       </Router>
     </div>
