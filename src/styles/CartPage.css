@@ -4,9 +4,20 @@
     width: auto;
     margin: auto;
 
-    background-color: grey;
+    background-color: palegreen;
     padding-top: 10rem;
     padding-bottom: 10rem;
     display: grid;
     gap: 10rem;
+}
+
+.cart{
+    padding: 1rem;
+    border: 1px solid rebeccapurple;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
 }
