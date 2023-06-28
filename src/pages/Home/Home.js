@@ -3,7 +3,11 @@ import '../../App.css';
 import "../../styles/HomePage.css";
 import logo from '../../logo.svg';
 
+import {useNavigate} from "react-router-dom";
+
 function Home() {
+  const navigate = useNavigate();
+
   return (
     <div className="App">
 
@@ -29,16 +33,16 @@ function Home() {
 
       <h1>Who are you shoipping for?</h1>
       <section className='whoForSection'>
-        <div className='whoForChoicesFrame'>Men
-          <button>Shop</button>
+        <div className='whoForChoicesFrame'>
+          <button onClick={() => navigate("/Men")}> Men </button>
         </div>
 
-        <div className='whoForChoicesFrame'>Women
-          <button>Shop</button>
+        <div className='whoForChoicesFrame'>
+          <button onClick={() => navigate("/Women")}> Women </button>
         </div>
 
-        <div className='whoForChoicesFrame'>Kid
-          <button>Shop</button>
+        <div className='whoForChoicesFrame'>
+          <button onClick={() => navigate("/Kids")}> Kids </button>
         </div>
       </section>
 

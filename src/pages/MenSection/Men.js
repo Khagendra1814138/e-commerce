@@ -38,6 +38,7 @@ function MensPage() {
             <box className="filterOptions"> Gender </box>
             <box className="filterOptions"> Colors </box>
             <box className="filterOptions"> Size </box>
+            <box className="filterOptions"> Brand </box>
             <box className="filterOptions"> Sport </box>
             <box className="filterOptions"> Sales & Deal </box>
           </div>

@@ -9,12 +9,13 @@ function NavBar() {
         <logo className="siteLogo"><Link exact to="/" className="links">Logo</Link></logo>
   
         <ul className='Navlists'>
-          <Link exact to="NewArrivals" className="links">New Arrivals</Link>
+          {/* <Link exact to="NewArrivals" className="links">New Arrivals</Link> */}
           <Link exact to="Men" className="links">Mens</Link>
           <Link exact to="Women" className="links">Women</Link>
           <Link exact to="Kids" className="links">Kids</Link>
-          <Link exact to="Cart" className="links">Cart</Link>
         </ul>
+
+        <Link exact to="Cart" className="cartLink">Cart</Link>
 
     </nav>
   );

@@ -12,7 +12,7 @@ export const Product = (props) => {
 
     return (
         <card className="productCard">
-            <image>{productImage}</image>
+            <img src={productImage} alt="productImage"/>
             <detail className="detailFrame">
 
             <div className="productDetail">
@@ -20,8 +20,8 @@ export const Product = (props) => {
                 <div className="productPrice">£{price}</div>
             </div>
             </detail>
-            <button className="addToBag" onClick={() => addToCart(id)}>Add to Bag
-                {cartItemAmount > 0 && <>({cartItemAmount})</>}
+            <button className="addToBag" onClick={() => addToCart(id)}>Add to Bag&nbsp;
+                {cartItemAmount > 0 && <>({"Quantity: " + cartItemAmount})</>}
             </button>
         </card>
     );

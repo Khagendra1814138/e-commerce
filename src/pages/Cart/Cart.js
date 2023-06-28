@@ -17,9 +17,6 @@ export const CartPage = () => {
 
   return (
     <div className="CartPage">
-      <div>
-        <h1>Your Cart Itemssss</h1>
-      </div>
       <div className="cart">
         {PRODUCTS.map((product) => {
           if (cartItems[product.id] !== 0) {

@@ -5,7 +5,7 @@
     margin: auto;
     display: flex;
     padding: 10px;
-    background: rebeccapurple;
+    background: #F5F5F5;
 
     .siteLogo{
         height: 60px;
@@ -31,8 +31,18 @@
     .links{
         text-decoration: none;
         font-size: 20px;
-        color: white;
+        color: black;
     }.links:hover{
         color: royalblue;
+    }
+
+    .cartLink{
+        height: 60px;
+        width: 60px;
+        display: flex;
+        text-decoration: none;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rebeccapurple;
     }
 }

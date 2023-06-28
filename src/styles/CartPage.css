@@ -4,7 +4,6 @@
     width: auto;
     margin: auto;
 
-    background-color: palegreen;
     padding-top: 10rem;
     padding-bottom: 10rem;
     display: grid;
@@ -12,9 +11,9 @@
 }
 
 .cart{
-    padding: 1rem;
-    border: 1px solid rebeccapurple;
-    
+    padding: 4rem;
+    /* border: 1px solid rebeccapurple; */
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
