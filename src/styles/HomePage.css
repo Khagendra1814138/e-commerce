@@ -96,6 +96,7 @@
 
 .whoForSection button{
   width: 10rem;
+  margin: auto;
   margin-top: 20rem;
   transition: 0.5s ease;
 }
