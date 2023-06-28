@@ -3,13 +3,12 @@ import React from "react";
 import "../../styles/NewArrivals.css";
 
 // import Carousel from "../../components/carousel/Carousel";
-// import { Shoes } from "../../components/carousel/Items";
+// import { countries } from "../../components/carousel/Data";
 
 function NewArrivals() {
     return (
-      <div className="NewArrivals">New Arrivals Section
+      <div className="NewArrivals">
 
-        {/* <Carousel images={Shoes} /> */}
   
       </div>
     );

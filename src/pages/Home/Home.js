@@ -3,6 +3,11 @@ import '../../App.css';
 import "../../styles/HomePage.css";
 import logo from '../../logo.svg';
 
+import Men from "../../images/home/mens.jpg";
+import Women from "../../images/home/womens.jpg";
+import Kids from "../../images/home/kids.jpg";
+
+
 import {useNavigate} from "react-router-dom";
 
 function Home() {
@@ -33,17 +38,17 @@ function Home() {
 
       <h1>Who are you shoipping for?</h1>
       <section className='whoForSection'>
-        <div className='whoForChoicesFrame'>
+        <image className='whoForChoicesFrame' style={{backgroundImage: `url(${Men})`}}>
           <button onClick={() => navigate("/Men")}> Men </button>
-        </div>
+        </image>
 
-        <div className='whoForChoicesFrame'>
+        <image className='whoForChoicesFrame' style={{backgroundImage: `url(${Women})`}}>
           <button onClick={() => navigate("/Women")}> Women </button>
-        </div>
+        </image>
 
-        <div className='whoForChoicesFrame'>
+        <image className='whoForChoicesFrame' style={{backgroundImage: `url(${Kids})`}}>
           <button onClick={() => navigate("/Kids")}> Kids </button>
-        </div>
+        </image>
       </section>
 
 
