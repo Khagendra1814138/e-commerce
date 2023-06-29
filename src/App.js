@@ -14,6 +14,7 @@ import {CartPage} from './pages/Cart/Cart';
 import { ShopContextProvider } from './context/shop-context';
 
 function App() {
+
   return (
     <div className="App">
       <ShopContextProvider>

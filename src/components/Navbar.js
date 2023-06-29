@@ -1,24 +1,50 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import "../styles/Nav.css";
+import { menuData } from "./navMenu";
 
 function NavBar() {
+  const [toggleMenu, setToggleMenu] = useState(false);
+
+  const toggleNav = () => {
+    setToggleMenu(!toggleMenu);
+  }
+
+  const [screenWidth, setScreenWidth] = useState (window.innerWidth);
+
+  useEffect (() => {
+    const changeWidth = () =>{
+      setScreenWidth(window.innerWidth);
+    }
+
+    window.addEventListener("resize", changeWidth);
+
+    return () =>{
+      window.removeEventListener("resize", changeWidth);
+    }
+
+  }, []);
+
   return (
       <nav className='navFrame'>
+        <logo className="siteLogo"><Link exact to="/">Logo</Link></logo>
+        
+        {(toggleMenu || screenWidth > 500) && (
+          <div className="navlists">
+            
+            {menuData.map((item, index) => (
+              <Link className="links" to={item.link} key={index}>{item.title}</Link>
+            ))}
 
-        <logo className="siteLogo"><Link exact to="/" className="links">Logo</Link></logo>
-  
-        <ul className='Navlists'>
-          {/* <Link exact to="NewArrivals" className="links">New Arrivals</Link> */}
-          <Link exact to="Men" className="links">Mens</Link>
-          <Link exact to="Women" className="links">Women</Link>
-          <Link exact to="Kids" className="links">Kids</Link>
-        </ul>
+          </div>
+        )}
+        
+        <logo className="cartLink"><Link exact to="/Cart">Cart</Link></logo>
 
-        <Link exact to="Cart" className="cartLink">Cart</Link>
-
+        <button onClick={toggleNav} className="menuBar"></button>
     </nav>
   );
 }
 
 export default NavBar;
+

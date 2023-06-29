@@ -66,12 +66,13 @@
 }
 
 .whoForSection{
-  height: 45rem;
-  width: auto;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+
+  gap: 2rem;
 
   .whoForChoicesFrame{
     height: 35rem;
