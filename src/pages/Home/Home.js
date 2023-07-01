@@ -11,17 +11,20 @@ import Kids from "../../images/home/kids.jpg";
 import { PRODUCTS } from '../MenSection/MensProduct';
 import {useNavigate} from "react-router-dom";
 
-import header1 from "../../images/home/header1.jpg";
+// import header1 from "../../images/home/header1.jpg";
+import header3 from "../../images/home/header3.webp";
 
 function Home() {
 
   const navigate = useNavigate();
 
   return (
-    <div className="App">
+    <div className="homePage">
 
       <header className="header">
-        <img className='headerImage' src={header1} alt="header"/>
+        <h1>SUMMER TO SHINE</h1>
+        <h2>Make it your season of brilliance with looks designed to move.</h2>
+        <img className='headerImage' src={header3} alt="header"/>
       </header>
 
       <section className='TrendingSection'>

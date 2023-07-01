@@ -4,6 +4,9 @@ import "../styles/Nav.css";
 import { menuData } from "./navMenu";
 
 import { ShoppingBag } from 'react-feather';
+import { Box } from 'react-feather';
+import { Heart } from 'react-feather';
+import { Menu } from 'react-feather';
 
 
 function NavBar() {
@@ -30,7 +33,7 @@ function NavBar() {
 
   return (
       <nav className='navFrame'>
-        <logo className="siteLogo"><Link exact to="/">Logo</Link></logo>
+        <Link exact to="/"><button className="siteLogo"><Box size={30} color="black"/></button></Link>
         
         {(toggleMenu || screenWidth > 500) && (
           <div className="navlists">
@@ -42,9 +45,19 @@ function NavBar() {
           </div>
         )}
         
-        <logo className="cartLink"><Link exact to="/Cart"><ShoppingBag size={30} color="black"/></Link></logo>
+        <button className="cartLink">
+          <Link exact to="/Cart">
+            <ShoppingBag size={30} color="black"/>
+          </Link>
+        </button>
 
-        <button onClick={toggleNav} className="menuBar"></button>
+        <button className="favouriteLink">
+          <Link exact to="/Cart">
+            <Heart size={30} color="black"/>
+          </Link>
+        </button>
+
+        <button onClick={toggleNav} className="menuBar"><Menu size={30} color="black"/></button>
     </nav>
   );
 }

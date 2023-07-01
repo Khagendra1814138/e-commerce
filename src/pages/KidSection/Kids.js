@@ -5,6 +5,10 @@ import "../../styles/SideFilter.css";
 import "../../styles/ProductCard.css";
 import "../../styles/CSScomponents/Trending.css"
 
+import { PRODUCTS } from "../../pages/MenSection/MensProduct";
+import { Product } from "../../pages/MenSection/products";
+
+
 function KidsPage() {
     return (
       <div className="KidsPage">
@@ -33,32 +37,12 @@ function KidsPage() {
             <box className="filterOptions"> Sport </box>
             <box className="filterOptions"> Sales & Deal </box>
           </div>
-          <div className="ProductDisplay"> 
-            
-            <card className="productCard">
-              <image></image>
-              <detail className="detailFrame">
-
-                <div className="productDetail">
-                  <div className="productName">Air Force 1</div>
-                  <div className="productPrice">£90.00</div>
-                </div>
-              </detail>
-              <button className="addToBag">Add to Bag</button>
-            </card>
-
-            <card className="productCard">2</card>
-            <card className="productCard">3</card>
-            <card className="productCard">4</card>
-            <card className="productCard">5</card>
-            <card className="productCard">6</card>
-            <card className="productCard">7</card>
-            <card className="productCard">8</card>
-            <card className="productCard">9</card>
-            <card className="productCard">10</card>
-            <card className="productCard">11</card>
-            <card className="productCard">12</card>
+          
+          <div className="ProductDisplay"> {PRODUCTS.map((product) => (
+              <Product data={product}/>
+            ))} 
           </div>
+
         </section>
   
       </div>

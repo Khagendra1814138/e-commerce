@@ -1,13 +1,19 @@
-
+.homePage{
+  padding-top: 4rem;
+}
 
 .header{
-  height: 60rem;
-  width: 1865px;
   margin: auto;
   display: flex;
-} .headerImage{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+.headerImage{
+  height: 50rem;
+  width: 1865px;
   display: flex;
-  object-fit: fill;
+  object-fit: cover;
   object-position: center;
 }
 
