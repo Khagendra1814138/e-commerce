@@ -9,8 +9,9 @@ import Kids from "../../images/home/kids.jpg";
 
 
 import { PRODUCTS } from '../MenSection/MensProduct';
-
 import {useNavigate} from "react-router-dom";
+
+import header1 from "../../images/home/header1.jpg";
 
 function Home() {
 
@@ -20,8 +21,7 @@ function Home() {
     <div className="App">
 
       <header className="header">
-   
-
+        <img className='headerImage' src={header1} alt="header"/>
       </header>
 
       <section className='TrendingSection'>
@@ -31,7 +31,7 @@ function Home() {
         <div className='trendingProductsFrame'>
 
         {[...PRODUCTS.map((s) => (
-            <img className="card" src={s.productImage}/>
+            <img className="card" src={s.productImage} alt='img'/>
           )),]}
    
         </div>

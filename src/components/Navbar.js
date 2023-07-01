@@ -5,6 +5,7 @@ import { menuData } from "./navMenu";
 
 import { ShoppingBag } from 'react-feather';
 
+
 function NavBar() {
   const [toggleMenu, setToggleMenu] = useState(false);
 

@@ -2,17 +2,20 @@
 
 .header{
   height: 60rem;
-  width: auto;
+  width: 1865px;
   margin: auto;
   display: flex;
-  justify-content: center;
-  align-items: center;
+} .headerImage{
+  display: flex;
+  object-fit: fill;
+  object-position: center;
 }
 
 .TrendingSection{
     height: 40rem;
     width: auto;
     margin: auto;
+    margin-top: 10rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
