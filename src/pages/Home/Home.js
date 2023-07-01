@@ -8,15 +8,19 @@ import Women from "../../images/home/womens.jpg";
 import Kids from "../../images/home/kids.jpg";
 
 
+import { PRODUCTS } from '../MenSection/MensProduct';
+
 import {useNavigate} from "react-router-dom";
 
 function Home() {
+
   const navigate = useNavigate();
 
   return (
     <div className="App">
 
-      <header className="header"> Header section  
+      <header className="header">
+   
 
       </header>
 
@@ -25,14 +29,11 @@ function Home() {
           <button>Shop</button>
         </div>
         <div className='trendingProductsFrame'>
-          <div className='card'>1</div>
-          <div className='card'>2</div>
-          <div className='card'>3</div>
-          <div className='card'>4</div>
-          <div className='card'>5</div>
-          <div className='card'>6</div>
-          <div className='card'>7</div>
-          <div className='card'>8</div>
+
+        {[...PRODUCTS.map((s) => (
+            <img className="card" src={s.productImage}/>
+          )),]}
+   
         </div>
       </section>
 

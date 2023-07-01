@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import "../styles/Nav.css";
 import { menuData } from "./navMenu";
 
+import { ShoppingBag } from 'react-feather';
+
 function NavBar() {
   const [toggleMenu, setToggleMenu] = useState(false);
 
@@ -39,7 +41,7 @@ function NavBar() {
           </div>
         )}
         
-        <logo className="cartLink"><Link exact to="/Cart">Cart</Link></logo>
+        <logo className="cartLink"><Link exact to="/Cart"><ShoppingBag size={30} color="black"/></Link></logo>
 
         <button onClick={toggleNav} className="menuBar"></button>
     </nav>

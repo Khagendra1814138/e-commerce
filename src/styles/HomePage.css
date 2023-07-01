@@ -61,8 +61,11 @@
 
 
 .card{
-    display: flex;
-    background-color: #EFEFED;
+  display: flex;
+  background-color: #EFEFED;
+  
+  object-fit: contain;
+  object-position: bottom;
 }
 
 .whoForSection{
