@@ -24,7 +24,8 @@ function Home() {
       <header className="header">
         <h1>SUMMER TO SHINE</h1>
         <h2>Make it your season of brilliance with looks designed to move.</h2>
-        <img className='headerImage' src={header3} alt="header"/>
+        <button>Shop</button>
+        <image className='headerImage' style={{backgroundImage: `url(${header3})`}}></image>
       </header>
 
       <section className='TrendingSection'>

@@ -1,5 +1,5 @@
 .homePage{
-  padding-top: 4rem;
+  padding-top: 10rem;
 }
 
 .header{
@@ -8,13 +8,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-} 
+  background: linear-gradient(45deg, teal, aquamarine);
+} .header button{
+  margin: auto;
+  margin-top: 4rem;
+}
+
+
 .headerImage{
-  height: 50rem;
+  margin-top: 2rem;
+  height: 55rem;
   width: 1865px;
   display: flex;
-  object-fit: cover;
-  object-position: center;
+  flex-direction: column;
+  align-items: center;
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .TrendingSection{
