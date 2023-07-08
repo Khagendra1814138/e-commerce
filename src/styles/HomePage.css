@@ -18,7 +18,7 @@
 .headerImage{
   margin-top: 2rem;
   height: 55rem;
-  width: 1865px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,13 +29,14 @@
 }
 
 .TrendingSection{
-    height: 40rem;
+    height: 41rem;
     width: auto;
     margin: auto;
     margin-top: 10rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    background: linear-gradient(45deg, teal, aquamarine);
 
     .trendingInfo{
         height: 100%;
@@ -44,16 +45,19 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: rebeccapurple;
+        border-right: 4px solid rgba(127, 255, 212, 0.288);
     }
     .trendingProductsFrame{
+        padding: 0rem 0rem 0rem 1rem;
         height: 100%;
         width: 100%;
         display: grid;
         grid-auto-flow: column;
-        grid-auto-columns: 27%;
-        gap: 2rem;
+        grid-auto-columns: 35%;
+        gap: 1rem;
 
+        align-items: center;
+        
         overflow-y: hidden;
         overflow-x: scroll;
         overscroll-behavior-inline: contain;
@@ -66,26 +70,31 @@
   }
   
   .trendingProductsFrame::-webkit-scrollbar-track {
-    background: slategray;
+    background: transparent;
   }
   
   .trendingProductsFrame::-webkit-scrollbar-thumb {
-    background-color: thistle;
+    background-color: brown;
     border-radius: 10px;
   }
   
   .trendingProductsFrame::-webkit-scrollbar-thumb:hover {
-    background: hsl(120 100% 10% / 1);
+    background: rebeccapurple;
   }
 
 
 
 .card{
+  height: 40rem;
+  width: 500px;
   display: flex;
-  background-color: #EFEFED;
+  justify-content: center;
+  align-items: center;
   
   object-fit: contain;
-  object-position: bottom;
+  object-position: center;
+
+  clip-path: polygon(15% 0, 90% 0, 75% 100%, 0% 100%);
 }
 
 .whoForSection{
@@ -110,21 +119,16 @@
     background-size: cover;
     background-position: center;
 
-    box-shadow: 8px 8px skyblue;
+    box-shadow: 6px 6px skyblue;
   }
 
-  .whoForChoicesFrame:hover{
-    transform: translateY(-20px);
-  }
+  /* .whoForChoicesFrame:hover{
+ 
+  } */
 }
 
 .whoForSection button{
   width: 10rem;
   margin: auto;
-  margin-top: 20rem;
-  transition: 0.5s ease;
-}
-
-.whoForSection button:hover{
-  background-color: slategray;
+  margin-bottom: 4rem;
 }

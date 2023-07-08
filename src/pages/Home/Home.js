@@ -1,7 +1,6 @@
 import React from 'react';
 import '../../App.css';
 import "../../styles/HomePage.css";
-import logo from '../../logo.svg';
 
 import Men from "../../images/home/mens.jpg";
 import Women from "../../images/home/womens.jpg";
@@ -68,26 +67,7 @@ function Home() {
         <div>Yoga</div>
         <div>Dance</div>
       </section>
-
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          This is an E-Commerce Front-end. Still in progress...
-        </p>
-       
-       
-        <div className="windowFrame"> This is the window/Curtin.
-            <div className="windowDoorL"></div>
-            <div className="windowDoorR"></div>
-        </div>
-
-        <div className="cameraLenseFrame"> Camera Open Lense.
-            <div className="coverTL"></div>
-            <div className="coverTR"></div>
-            <div className="coverBL"></div>
-            <div className="coverBR"></div>
-        </div>
-      </header>
+    
     </div>
   );
 }
