@@ -31,7 +31,8 @@ function Home() {
         <div className='trendingInfo'>Trending Products This Week!
           <button>Shop</button>
         </div>
-        <div className='trendingProductsFrame'>
+
+        <div className='trendingProducts'>
 
         {[...PRODUCTS.map((s) => (
             <img className="card" src={s.productImage} alt='img'/>
