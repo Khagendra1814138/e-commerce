@@ -30,7 +30,7 @@ button{
   font-weight: bold;
   transition: 0.5s ease;
 
-  background: linear-gradient(65deg, white, aqua);
+  background: linear-gradient(65deg, pink, aqua);
 
   &:hover{
     transform: translateY(-10px);

@@ -49,7 +49,8 @@
     top: 14px;
     padding: 5px;
 
-    background-color: rgb(0, 185, 185);
+    background-color: none;
+    background: rgb(0, 185, 185);
     transition: 0.5s ease;
 
     &:hover{
@@ -134,12 +135,13 @@
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
 
     .navlists{
         margin: auto;
         flex-direction: column;
         height: auto;
+        width: 100%;
     }
 
     .links:nth-child(1){

@@ -1,0 +1,12 @@
+.footerSection{
+    height: 30rem;
+    width: 100%;
+    background-color: #232F3E;
+    background: linear-gradient(45deg, #232F3E, teal);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: whitesmoke;
+}

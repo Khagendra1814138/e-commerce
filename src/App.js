@@ -3,6 +3,8 @@ import './App.css';
 
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import TopButton from './components/backToTop/BackToTop';
 
 import Home from "./pages/Home/Home";
 import MensPage from './pages/MenSection/Men';
@@ -20,6 +22,7 @@ function App() {
       <ShopContextProvider>
         <Router>
           <Navbar/>
+          <TopButton/>
           <Routes>
             <Route path='/' element={<Home/>} />
             <Route path='/NewArrivals' element={<NewArrivals/>} />
@@ -29,6 +32,7 @@ function App() {
             <Route path='/Cart' element={<CartPage/>} />
           </Routes>
         </Router>
+        <Footer/>
       </ShopContextProvider>
     </div>
   );

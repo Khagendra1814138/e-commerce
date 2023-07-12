@@ -71,7 +71,8 @@
 .productCard .addToBag{
     height: 4rem;
     width: 90%;
-    background-color: black;
+    background-color: none;
+    background: black;
     color: white;
     margin: auto;
     transition: 0.5s ease;

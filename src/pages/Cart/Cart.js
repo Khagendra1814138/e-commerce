@@ -17,23 +17,33 @@ export const CartPage = () => {
 
   return (
     <div className="CartPage">
-      <div className="cart">
-        {PRODUCTS.map((product) => {
-          if (cartItems[product.id] !== 0) {
-            return <CartItem data={product} />;
-          } else
-          return (null);
-        })}
+      <div className="cartFrame">
+        <div className="cart">
+          {PRODUCTS.map((product) => {
+            if (cartItems[product.id] !== 0) {
+              return <CartItem data={product} />;
+            } else
+            return (null);
+          })}
+        </div>
       </div>
 
       {totalAmount > 0 ? (
         <div className="checkoutFrame">
-          <p> Subtotal: £{totalAmount} </p>
+          <h1>Summary</h1>
+          <div>
+            <p>Total</p>
+            <p>£{totalAmount}</p>
+          </div>
+          <button> Checkout </button>
           <button onClick={() => navigate("/")}> Continue Shopping </button>
-          <button> Pay Total </button>
         </div>
       ) : (
-        <h1> Your Shopping Cart is Empty</h1>
+        <div className="emptyBagFrame">
+          <h1> Your bag is empty! :( </h1>
+          <button onClick={() => navigate("/")}> Continue Shopping </button>
+        </div>
+      
       )}
     </div>
   );
