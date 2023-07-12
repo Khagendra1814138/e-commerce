@@ -57,7 +57,7 @@
       margin-bottom: 250px;
     }
 
-    .trendingProducts{
+    .trendingProduct{
       padding: 0rem 0rem 0rem 1rem;
       height: 100%;
       width: 100%;
@@ -70,9 +70,9 @@
       overflow-x: scroll;
       overscroll-behavior-inline: contain;
     }
-    .trendingProducts image .productName{
+    .trendingProduct image .productName{
       margin: auto;
-      padding: 1rem;
+      padding: 0.6rem;
       padding-right: 5rem;
       text-align: center;
       font-weight: bold;
@@ -83,20 +83,20 @@
 }
 
 /* CUSTOME SCROOL BAR */
-  .trendingProducts::-webkit-scrollbar {
+  .trendingProduct::-webkit-scrollbar {
     height: 1rem;
   }
   
-  .trendingProducts::-webkit-scrollbar-track {
+  .trendingProduct::-webkit-scrollbar-track {
     background: teal;
   }
   
-  .trendingProducts::-webkit-scrollbar-thumb {
+  .trendingProduct::-webkit-scrollbar-thumb {
     background-color: pink;
     border-radius: 10px;
   }
   
-  .trendingProducts::-webkit-scrollbar-thumb:hover {
+  .trendingProduct::-webkit-scrollbar-thumb:hover {
     background: rgb(209, 144, 156);
   }
 
@@ -152,4 +152,14 @@
   width: 10rem;
   margin: auto;
   margin-bottom: 5rem;
+}
+
+.whoForSection div{
+  height: 180px;
+  width: 180px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
 }

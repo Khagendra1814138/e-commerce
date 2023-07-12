@@ -41,12 +41,12 @@ function Home() {
           <button>Shop</button>
         </div>
 
-        <div className='trendingProducts'>
+        <div className='trendingProduct'>
           {[...PRODUCTS.map((products) => (
-              <image> 
-                <img className="card"src={products.productImage} alt='img'/>
-                <div className='productName'> {products.productName} </div>
-              </image>
+            <image> 
+              <img className="card"src={products.productImage} alt='img'/>
+              <div className='productName'> {products.productName} </div>
+            </image>
             )),]}
         </div>
       </section>
