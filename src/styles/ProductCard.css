@@ -2,6 +2,7 @@
     min-height: auto;
     width: auto;
     margin: auto;
+    margin-top: 10rem;
     display: flex;
 }
 .ProductDisplay{

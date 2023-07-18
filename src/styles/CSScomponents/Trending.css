@@ -1,9 +1,11 @@
 .trendingThisWeekSection{
     height: auto;
-    width: 98%;
+    width: auto;
     margin: auto;
     justify-content: flex-start;
     align-items: center;
+    padding: 2rem;
+    background: linear-gradient(0deg, aquamarine, skyblue);
 
     .trendingProductsFrame{
         height: 35rem;
@@ -25,6 +27,8 @@
     }
 
     .trendingCards{
+        height: 500px;
+        width: 600px;
         display: flex;
         background-color: #EFEFED;
         justify-content: center;
@@ -32,13 +36,21 @@
     }
 }
 
+.trendingThisWeekSection h1{
+    font-size: 35px;
+    word-spacing: 4px;
+    text-align: start;
+
+    text-transform: uppercase;
+}
 /* CUSTOME SCROOL BAR */
 .trendingProductsFrame::-webkit-scrollbar {
     height: 1rem;
 }
 
 .trendingProductsFrame::-webkit-scrollbar-track {
-    background: slategray;
+    background: teal;
+    border-radius: 10px;
 }
 
 .trendingProductsFrame::-webkit-scrollbar-thumb {

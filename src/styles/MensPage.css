@@ -5,11 +5,8 @@
     margin: auto;
 
     padding-top: 10rem;
-    padding-bottom: 10rem;
-    display: grid;
-    gap: 10rem;
+    padding-bottom: 20rem;
 }
-
 
 .mensHeader{
     border-top: 1px solid rosybrown;

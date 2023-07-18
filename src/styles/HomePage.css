@@ -1,5 +1,5 @@
 .homePage{
-  padding-top: 10rem;
+  padding-top: 0rem;
   padding-bottom: 10rem
 }
 
@@ -120,26 +120,28 @@
 }
 
 .whoForSection{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   margin: auto;
   margin-top: 4rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+  background: linear-gradient(90deg, aquamarine, skyblue);
 
-  gap: 2rem;
+  gap: 1rem;
 
   .whoForChoicesFrame{
     height: 35rem;
-    width: 30rem;
+    width: 35rem;
     margin: auto;
     display: flex;
-    border-radius: 1rem;
+    border-radius: 0rem;
     transition: 0.5s ease;
 
     background-size: cover;
     background-position: center;
-    box-shadow: 6px 6px skyblue;
     
     &:hover{
       border-bottom-left-radius: 6rem;

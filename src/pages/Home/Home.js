@@ -69,14 +69,11 @@ function Home() {
 
       <h1>Shop By Sport</h1>
       <section className='whoForSection'>
-        <div>Football</div>
         <div>Basketball</div>
         <div>Tennis</div>
         <div>Running</div>
         <div>Skateboard</div>
         <div>Training</div>
-        <div>Yoga</div>
-        <div>Dance</div>
       </section>
     
     </div>

@@ -16,9 +16,10 @@ function MensPage() {
           <h1>MENS FOOTWARE</h1>
           <image className="focusedProduct">Product Image</image>
         </header> */}
+        <h1>MENS FOOTWARE</h1>
 
         <section className="trendingThisWeekSection">
-          <h1>Mens Trending This Week</h1>
+          <h1>Men's Trending This Week</h1>
           <div className='trendingProductsFrame'>
             <div className='trendingCards'>1</div>
             <div className='trendingCards'>2</div>
@@ -30,9 +31,7 @@ function MensPage() {
             <div className='trendingCards'>8</div>
             </div>
         </section>
-
-        <h1>MENS FOOTWARE</h1>
-
+        
         <section className="productDisplayFrame">
           <div className="sideFilterFrame"> Side Filter
             <box className="filterOptions"> Gender </box>

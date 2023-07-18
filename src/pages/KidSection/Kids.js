@@ -13,8 +13,10 @@ function KidsPage() {
     return (
       <div className="KidsPage">
 
+      <h1>KIDS FOOTWARE</h1>
+
         <section className="trendingThisWeekSection">
-          <h1>Kids Trending This Week</h1>
+          <h1>Kid's Trending This Week</h1>
           <div className='trendingProductsFrame'>
             <div className='trendingCards'>1</div>
             <div className='trendingCards'>2</div>
@@ -22,12 +24,8 @@ function KidsPage() {
             <div className='trendingCards'>4</div>
             <div className='trendingCards'>5</div>
             <div className='trendingCards'>6</div>
-            <div className='trendingCards'>7</div>
-            <div className='trendingCards'>8</div>
             </div>
         </section>
-
-        <h1>KIDS FOOTWARE</h1>
 
         <section className="productDisplayFrame">
           <div className="sideFilterFrame"> Side Filter

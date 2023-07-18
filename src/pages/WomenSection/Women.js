@@ -12,8 +12,9 @@ function WomensPage() {
     return (
       <div className="WomensPage">
 
+      <h1>WOMENS FOOTWARE</h1>
         <section className="trendingThisWeekSection">
-          <h1>Womens Trending This Week</h1>
+          <h1>Women's Trending This Week</h1>
           <div className='trendingProductsFrame'>
             <div className='trendingCards'>1</div>
             <div className='trendingCards'>2</div>
@@ -25,8 +26,6 @@ function WomensPage() {
             <div className='trendingCards'>8</div>
             </div>
         </section>
-
-        <h1>WOMENS FOOTWARE</h1>
 
         <section className="productDisplayFrame">
           <div className="sideFilterFrame"> Side Filter

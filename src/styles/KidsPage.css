@@ -1,12 +1,5 @@
 
 .KidsPage{
-    height: auto;
-    width: auto;
-    margin: auto;
-
-    background-color: bisque;
     padding-top: 10rem;
-    padding-bottom: 10rem;
-    display: grid;
-    gap: 10rem;
+    padding-bottom: 20rem;
 }
