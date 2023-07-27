@@ -5,38 +5,58 @@
     justify-content: flex-start;
     align-items: center;
     padding: 2rem;
-    background: linear-gradient(0deg, aquamarine, skyblue);
-
-    .trendingProductsFrame{
-        height: 35rem;
-        width: auto;
-        display: grid;
-        grid-auto-flow: column;
-        grid-auto-columns: 33%;
-        gap: 2rem;
-
-        overflow-y: hidden;
-        overflow-x: scroll;
-        overscroll-behavior-inline: contain;
-
-        scroll-snap-type: x mandatory;
-    }
-
-    .trendingProductsFrame > * {
-        scroll-snap-align: start;
-    }
-
-    .trendingCards{
-        height: 500px;
-        width: 600px;
-        display: flex;
-        background-color: #EFEFED;
-        justify-content: center;
-        align-items: center;
-    }
+    background: linear-gradient(0deg, PaleTurquoise, skyblue);
 }
 
-.trendingThisWeekSection h1{
+.trendingProductsFrame{
+    height: 35rem;
+    width: auto;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 33%;
+    gap: 2rem;
+
+    overflow-y: hidden;
+    overflow-x: scroll;
+    overscroll-behavior-inline: contain;
+
+    scroll-snap-type: x mandatory;
+}
+
+.trendingProductsFrame > * {
+    scroll-snap-align: start;
+}
+
+.trendingCards{
+    height: 500px;
+    width: 600px;
+    display: flex;
+    background-color: #EFEFED;
+    justify-content: center;
+    align-items: center;
+}
+
+.trendingThisWeekSection_Women{
+    height: auto;
+    width: auto;
+    margin: auto;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(0deg, pink, skyblue);
+}
+
+.trendingThisWeekSection_Kids{
+    height: auto;
+    width: auto;
+    margin: auto;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(0deg, PeachPuff, skyblue);
+}
+
+.trendingThisWeekSection h1, .trendingThisWeekSection_Women h1, .trendingThisWeekSection_Kids h1 {
     font-size: 35px;
     word-spacing: 4px;
     text-align: start;

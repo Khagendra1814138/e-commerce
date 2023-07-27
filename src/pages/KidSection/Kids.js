@@ -15,7 +15,7 @@ function KidsPage() {
 
       <h1>KIDS FOOTWARE</h1>
 
-        <section className="trendingThisWeekSection">
+        <section className="trendingThisWeekSection_Kids">
           <h1>Kid's Trending This Week</h1>
           <div className='trendingProductsFrame'>
             <div className='trendingCards'>1</div>

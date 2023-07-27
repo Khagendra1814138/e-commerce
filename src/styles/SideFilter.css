@@ -3,30 +3,41 @@
     height: 57rem;
     min-width: 18rem;
     padding: 2rem;
-
     display: grid;
     grid-auto-flow: row;
     gap: 2rem;
-
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-
-    box-shadow: 0px 0px 10px #888888;;
-
+    box-shadow: 0px 0px 20px #888888;
     text-align: center;
-
     position: sticky;
     top: 0px;
-
     overflow-y: scroll;
     overflow-x: hidden;
     overscroll-behavior-inline: contain;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 
+    .sideFilterIcon{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 18px;
+        margin: auto;
+        width: 60%;
+        color: slategray;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .sfIcon{
+            border-radius: 10px;
+            padding: 4px;
+            background-color: #00B9B9;
+        }
+    }
 
     .filterOptions{
         height: 20rem;
         padding: 1rem;
-        border-top: 2px solid #E5E5E5;
+        border-top: 10px solid #E5E5E5;
         font-size: 18px;
         font-weight: bold;
         padding-top: 0.5rem;
@@ -41,11 +52,13 @@
 }
 
 .sideFilterFrame::-webkit-scrollbar-track {
-    background: transparent;
+    background: #EEEEEE;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .sideFilterFrame::-webkit-scrollbar-thumb {
-    background-color: #7F7F7F;
+    background-color: slategray;
     border-radius: 10px;
 }
 

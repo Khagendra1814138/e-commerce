@@ -13,7 +13,7 @@ function WomensPage() {
       <div className="WomensPage">
 
       <h1>WOMENS FOOTWARE</h1>
-        <section className="trendingThisWeekSection">
+        <section className="trendingThisWeekSection_Women">
           <h1>Women's Trending This Week</h1>
           <div className='trendingProductsFrame'>
             <div className='trendingCards'>1</div>

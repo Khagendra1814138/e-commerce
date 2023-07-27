@@ -8,6 +8,8 @@ import "../../styles/CSScomponents/Trending.css";
 import { PRODUCTS } from "./MensProduct";
 import { Product } from "./products";
 
+import { Menu } from 'react-feather';
+
 function MensPage() {
     return (
       <div className="MenPage">
@@ -33,7 +35,8 @@ function MensPage() {
         </section>
         
         <section className="productDisplayFrame">
-          <div className="sideFilterFrame"> Side Filter
+          <div className="sideFilterFrame">
+            <div className="sideFilterIcon">Side Filter <Menu className="sfIcon" size={30} color="black"/></div>
             <box className="filterOptions"> Gender </box>
             <box className="filterOptions"> Colors </box>
             <box className="filterOptions"> Size </box>
