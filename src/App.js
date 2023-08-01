@@ -31,8 +31,8 @@ function App() {
             <Route path='/Kids' element={<KidsPage/>} />
             <Route path='/Cart' element={<CartPage/>} />
           </Routes>
+          <Footer/>
         </Router>
-        <Footer/>
       </ShopContextProvider>
     </div>
   );

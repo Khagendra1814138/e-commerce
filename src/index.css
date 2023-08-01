@@ -43,6 +43,8 @@ h1{
   text-align: center;
   font-weight: bold;
   padding: 2rem;
+  color: black;
+  text-shadow: 2px 2px aquamarine;
 }
 h2{
   margin: auto;

@@ -37,7 +37,11 @@ function Home() {
       </header>
 
       <section className='TrendingSection'>
-        <div className='trendingInfo'>Trending Products This Week!
+        <div className='trendingInformationFrame'>
+          <h2>Trending</h2>
+          <br></br>
+          <br></br> 
+          <p>Shop some of the most viewed and desired products by our customers.</p>
           <button>Shop</button>
         </div>
 
@@ -67,13 +71,13 @@ function Home() {
       </section>
 
 
-      <h1>Shop By Sport</h1>
+      <h1>Shop By The Brands You Love</h1>
       <section className='whoForSection'>
-        <div>Basketball</div>
-        <div>Tennis</div>
-        <div>Running</div>
-        <div>Skateboard</div>
-        <div>Training</div>
+        <div>Adidas</div>
+        <div>Nike</div>
+        <div>Puma</div>
+        <div>Vans</div>
+        <div>Converse</div>
       </section>
     
     </div>

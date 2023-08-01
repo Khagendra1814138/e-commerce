@@ -69,12 +69,12 @@
 }
 
 .trendingProductsFrame::-webkit-scrollbar-track {
-    background: teal;
+    background: skyblue;
     border-radius: 10px;
 }
 
 .trendingProductsFrame::-webkit-scrollbar-thumb {
-    background-color: thistle;
+    background-color: teal;
     border-radius: 10px;
 }
 
