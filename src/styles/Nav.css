@@ -11,6 +11,7 @@
     display: flex;
     background: linear-gradient(45deg, #F5F5F5, #F5F5F5);
     justify-content: space-between;
+    position: relative;
 }
 
 
@@ -21,7 +22,6 @@
     position: absolute;
     left: 50px;
     top: 15px;
-    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;

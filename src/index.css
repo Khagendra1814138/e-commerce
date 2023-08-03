@@ -1,3 +1,10 @@
+:root{
+  --navbarBtnColour: rgb(0, 185, 185);
+  --navbarBtnHoverColour: #d6d6d6;
+}
+
+
+
 body {
   margin: 0;
   margin: auto;

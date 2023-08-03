@@ -1,0 +1,50 @@
+@import "../../index.css";
+
+.loginRegisterBar{
+    height: 50px;
+    width: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #d6d6d6;
+    padding-right: 2rem;
+}
+
+.iconFrame{
+    margin-right: 1rem;
+    height: 34px;
+    width: 8rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    border-right: 2px solid var(--navbarBtnColour);
+    border-left: 2px solid var(--navbarBtnColour);
+    border-radius: 10px;
+
+    transition: 0.5s ease;
+
+    &:hover{
+        transform: translateX(-10px);
+        background: var(--navbarBtnColour);
+    }
+}
+
+
+
+@media screen and (max-width: 700px) {
+
+    .loginRegisterBar{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-right: 0rem;
+    }
+
+    .iconFrame{
+        margin-right: 0rem;
+    }
+}

@@ -1,0 +1,108 @@
+@import "../../index.css";
+
+.loginPage{
+    padding-top: 10rem;
+    padding-bottom: 20rem;
+    background: linear-gradient(45deg, teal, aquamarine);
+}
+
+
+.loginPage h1{
+    padding: 0px;
+}
+
+.formFrame{
+    min-width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.avatarIcon{
+    background-color: var(--navbarBtnColour);
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 4px 2px 10px aquamarine;
+}
+
+.loginForm{
+    height: auto;
+    width: 20rem;
+    margin: auto;
+    margin-top: -50px;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 2rem;
+    padding-top: 4rem;
+    background-color: var(--navbarBtnColour);
+    box-shadow: 10px 2px 10px aquamarine;
+}
+
+.usefulBtnFrame{
+    width: 24rem;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+
+}.usefulBtnFrame button{
+    width: 10rem;
+    height: 2rem;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.signUp-In-Btn{
+    height: 60px;
+    width: 230px;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: ease 0.5s;
+    margin: auto;
+    margin-top: 2rem;
+
+    &:hover{
+        transform: translateX(0px);
+        width: 300px;
+    }
+}
+
+
+
+.registerLabel{
+    width: 100%;
+    padding: 4px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 10px;
+    color: rgb(35,47,62);
+}
+.inputBox{
+    width: 100%;
+    background: gainsboro;
+    height: 34px;
+    border-radius: 4px;
+    display: flex;
+    text-align: left;
+    font-size: 16px;
+    margin: auto;
+    color: rgb(35,47,62);
+    border: none;
+}
