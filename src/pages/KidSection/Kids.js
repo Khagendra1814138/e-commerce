@@ -8,11 +8,14 @@ import "../../styles/CSScomponents/Trending.css"
 import { PRODUCTS } from "../../pages/MenSection/MensProduct";
 import { Product } from "../../pages/MenSection/products";
 
+import KidsCarousel from "./kidsCarousel";
 
 function KidsPage() {
     return (
       <div className="KidsPage">
 
+      
+      <KidsCarousel/>
       <h1>KIDS FOOTWARE</h1>
 
         <section className="trendingThisWeekSection_Kids">

@@ -9,3 +9,15 @@
     text-shadow: 2px 2px PeachPuff;
 }
 
+.wasssa{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+}
+
+.mySwiper{
+    height: 500px;
+    width: 90%;
+    border: 1px solid rebeccapurple;
+}

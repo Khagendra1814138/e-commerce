@@ -11,8 +11,8 @@ import Kids from "../../images/home/kids.jpg";
 import { PRODUCTS } from '../MenSection/MensProduct';
 import {useNavigate} from "react-router-dom";
 
-// import header1 from "../../images/home/header1.jpg";
-import header3 from "../../images/home/header3.webp";
+import HomeSwiper from './homeSwiper';
+
 
 function Home() {
   const whoForSection = useRef(null);
@@ -33,7 +33,7 @@ function Home() {
         <h1>SUMMER TO SHINE</h1>
         <h2>Make it your season of brilliance with looks designed to move.</h2>
         <button onClick={() => scrollToSection(whoForSection)}>Shop</button>
-        <image className='headerImage' style={{backgroundImage: `url(${header3})`}}></image>
+        <HomeSwiper/>
       </header>
 
       <section className='TrendingSection'>

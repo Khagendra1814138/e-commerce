@@ -1,3 +1,10 @@
+.homeSwiper{
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  border-top: 6px solid turquoise;
+}
+
 .homePage{
   padding-top: 0rem;
   padding-bottom: 10rem
@@ -21,7 +28,6 @@
 
 
 .headerImage{
-  margin-top: 2rem;
   height: 55rem;
   width: 100%;
   display: flex;

@@ -1,11 +1,36 @@
 
 .NewArrivals{
-    height: 100vh;
+    height: auto;
     width: auto;
-    overflow: hidden;
-    background-color: green;
-
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    /* padding-top: 10rem;
+    padding-bottom: 20rem;
+    background-color: green; */
 }
 
+.NewArrivals body, html {
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 8rem;
+    scroll-behavior: smooth;
+}
+
+.section{
+    display: flex;
+    height: 100vh;
+    width: auto;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+
+    &:nth-child(1){
+        background: rosybrown;
+    }
+    &:nth-child(2){
+        background: rebeccapurple;
+    }
+    &:nth-child(3){
+        background: red;
+    }
+    &:nth-child(4){
+        background: blue;
+    }
+}
+  
