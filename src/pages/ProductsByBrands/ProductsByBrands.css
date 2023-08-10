@@ -1,0 +1,12 @@
+.productsByBrandsPage{
+    height: auto;
+    width: auto;
+    margin: auto;
+    padding-top: 10rem;
+    padding-bottom: 20rem;
+}
+
+.productDisplayWrapper{
+    width: 80%;
+    margin: auto;
+}

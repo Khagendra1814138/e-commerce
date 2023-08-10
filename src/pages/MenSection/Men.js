@@ -8,6 +8,7 @@ import "../../styles/CSScomponents/Trending.css";
 
 import { PRODUCTS } from "./MensProduct";
 import { Product } from "./products";
+import { TrendingCreps } from "../../components/trendingShoesFilter";
 
 import { Menu } from 'react-feather';
 
@@ -25,12 +26,14 @@ function MensPage() {
         <section className="trendingThisWeekSection">
           <h1>Men's Trending This Week</h1>
           <div className='trendingProductsFrame'>
-              {[...PRODUCTS.map((products) => (
+            {TrendingCreps.map((trendingCreps) => (
+
               <div className='menTrendingCardsWrapper'> 
-                <img className="card"src={products.productImage} alt='img'/>
-                <div className='productName'> {products.productName} </div>
+                <img className="card"src={trendingCreps.productImage} alt='img'/>
+                <div className='productName'> {trendingCreps.productName} </div>
               </div>
-              )),]}
+
+            ))}
           </div>
         </section>
         

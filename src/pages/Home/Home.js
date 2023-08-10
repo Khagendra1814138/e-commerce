@@ -1,5 +1,7 @@
 import React from 'react';
 import { useRef } from 'react';
+import {useNavigate, Link} from "react-router-dom";
+
 import '../../App.css';
 import "../../styles/HomePage.css";
 
@@ -7,9 +9,7 @@ import Men from "../../images/home/mens.jpg";
 import Women from "../../images/home/womens.jpg";
 import Kids from "../../images/home/kids.jpg";
 
-
-import { PRODUCTS } from '../MenSection/MensProduct';
-import {useNavigate} from "react-router-dom";
+import { TrendingCreps } from "../../components/trendingShoesFilter";
 
 import HomeSwiper from './homeSwiper';
 
@@ -46,12 +46,14 @@ function Home() {
         </div>
 
         <div className='trendingProduct'>
-          {[...PRODUCTS.map((products) => (
+          {TrendingCreps.map((trendingCreps) => (
+
             <image> 
-              <img className="card"src={products.productImage} alt='img'/>
-              <div className='productName'> {products.productName} </div>
+                <img className="card"src={trendingCreps.productImage} alt='img'/>
+                <div className='productName'> {trendingCreps.productName} </div>
             </image>
-            )),]}
+
+          ))}
         </div>
       </section>
 
@@ -73,11 +75,9 @@ function Home() {
 
       <h1>Shop By The Brands You Love</h1>
       <section className='whoForSection'>
-        <div>Adidas</div>
-        <div>Nike</div>
-        <div>Puma</div>
-        <div>Vans</div>
-        <div>Converse</div>
+        <Link className='brandPage' exact to="/AdidasProducts">Adidas</Link>
+        <Link className='brandPage' exact to="/NikeProducts">Nike</Link>
+        <Link className='brandPage' exact to="/PumaProducts">Puma</Link>
       </section>
     
     </div>

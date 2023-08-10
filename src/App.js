@@ -16,6 +16,11 @@ import KidsPage from './pages/KidSection/Kids';
 import WomensPage from './pages/WomenSection/Women';
 import NewArrivals from './pages/NewSection/NewArrivals';
 
+
+import AdidasProducts from './pages/ProductsByBrands/AdidasProducts';
+import NikeProducts from './pages/ProductsByBrands/NikeProducts';
+import PumaProducts from './pages/ProductsByBrands/PumaProducts';
+
 import {CartPage} from './pages/Cart/Cart';
 import { ShopContextProvider } from './context/shop-context';
 
@@ -37,6 +42,10 @@ function App() {
             <Route path='/Cart' element={<CartPage/>} />
             <Route path='/Login' element={<LoginPage/>} />
             <Route path='/Register' element={<RegisterPage/>} />
+
+            <Route path='/AdidasProducts' element={<AdidasProducts/>} />
+            <Route path='/NikeProducts' element={<NikeProducts/>} />
+            <Route path='/PumaProducts' element={<PumaProducts/>} />
           </Routes>
           <Footer/>
         </Router>

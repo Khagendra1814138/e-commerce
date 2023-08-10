@@ -7,6 +7,7 @@ import "../../styles/CSScomponents/Trending.css"
 
 import { PRODUCTS } from "../../pages/MenSection/MensProduct";
 import { Product } from "../../pages/MenSection/products";
+import { TrendingCreps } from "../../components/trendingShoesFilter";
 
 function WomensPage() {
     return (
@@ -16,12 +17,14 @@ function WomensPage() {
         <section className="trendingThisWeekSection_Women">
           <h1>Women's Trending This Week</h1>
           <div className='trendingProductsFrame'>
-              {[...PRODUCTS.map((products) => (
-              <div className='womenTrendingCardsWrapper'> 
-                <img className="card"src={products.productImage} alt='img'/>
-                <div className='productName'> {products.productName} </div>
-              </div>
-              )),]}
+              {TrendingCreps.map((trendingCreps) => (
+
+                <div className='womenTrendingCardsWrapper'> 
+                  <img className="card"src={trendingCreps.productImage} alt='img'/>
+                  <div className='productName'> {trendingCreps.productName} </div>
+                </div>
+
+              ))}
           </div>
         </section>
 
