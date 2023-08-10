@@ -8,26 +8,30 @@ import "../../styles/CSScomponents/Trending.css"
 import { PRODUCTS } from "../../pages/MenSection/MensProduct";
 import { Product } from "../../pages/MenSection/products";
 
-import KidsCarousel from "./kidsCarousel";
+const trending = PRODUCTS.filter(trendingProducts => {
+  return trendingProducts.trending === "Yes";
+});
 
 function KidsPage() {
     return (
       <div className="KidsPage">
 
       
-      <KidsCarousel/>
+
       <h1>KIDS FOOTWARE</h1>
 
         <section className="trendingThisWeekSection_Kids">
           <h1>Kid's Trending This Week</h1>
           <div className='trendingProductsFrame'>
-            <div className='trendingCards'>1</div>
-            <div className='trendingCards'>2</div>
-            <div className='trendingCards'>3</div>
-            <div className='trendingCards'>4</div>
-            <div className='trendingCards'>5</div>
-            <div className='trendingCards'>6</div>
-            </div>
+            {trending.map((trendingCreps) => (
+
+              <div className='kidTrendingCardsWrapper'> 
+                <img className="card"src={trendingCreps.productImage} alt='img'/>
+                <div className='productName'> {trendingCreps.productName} </div>
+              </div>
+         
+            ))}
+          </div>
         </section>
 
         <section className="productDisplayFrame">

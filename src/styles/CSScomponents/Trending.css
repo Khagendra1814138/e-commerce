@@ -9,7 +9,7 @@
 }
 
 .trendingProductsFrame{
-    height: 35rem;
+    height: auto;
     width: auto;
     display: grid;
     grid-auto-flow: column;
@@ -19,7 +19,9 @@
     overflow-y: hidden;
     overflow-x: scroll;
     overscroll-behavior-inline: contain;
+    padding-bottom: 10px;
 }
+
 
 .trendingCards{
     height: 500px;

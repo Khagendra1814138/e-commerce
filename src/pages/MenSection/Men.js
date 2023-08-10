@@ -1,6 +1,7 @@
 import React from "react";
 
 import "../../styles/MensPage.css";
+import "../../styles/SwiperGlobal.css";
 import "../../styles/SideFilter.css";
 import "../../styles/ProductCard.css";
 import "../../styles/CSScomponents/Trending.css";
@@ -9,6 +10,7 @@ import { PRODUCTS } from "./MensProduct";
 import { Product } from "./products";
 
 import { Menu } from 'react-feather';
+
 
 function MensPage() {
     return (
@@ -23,15 +25,13 @@ function MensPage() {
         <section className="trendingThisWeekSection">
           <h1>Men's Trending This Week</h1>
           <div className='trendingProductsFrame'>
-            <div className='trendingCards'>1</div>
-            <div className='trendingCards'>2</div>
-            <div className='trendingCards'>3</div>
-            <div className='trendingCards'>4</div>
-            <div className='trendingCards'>5</div>
-            <div className='trendingCards'>6</div>
-            <div className='trendingCards'>7</div>
-            <div className='trendingCards'>8</div>
-            </div>
+              {[...PRODUCTS.map((products) => (
+              <div className='menTrendingCardsWrapper'> 
+                <img className="card"src={products.productImage} alt='img'/>
+                <div className='productName'> {products.productName} </div>
+              </div>
+              )),]}
+          </div>
         </section>
         
         <section className="productDisplayFrame">

@@ -26,4 +26,13 @@
     text-shadow: 2px 2px PaleTurquoise;
 }
 
-
+.menTrendingCardsWrapper{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, MediumTurquoise, skyblue);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}

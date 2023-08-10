@@ -16,15 +16,13 @@ function WomensPage() {
         <section className="trendingThisWeekSection_Women">
           <h1>Women's Trending This Week</h1>
           <div className='trendingProductsFrame'>
-            <div className='trendingCards'>1</div>
-            <div className='trendingCards'>2</div>
-            <div className='trendingCards'>3</div>
-            <div className='trendingCards'>4</div>
-            <div className='trendingCards'>5</div>
-            <div className='trendingCards'>6</div>
-            <div className='trendingCards'>7</div>
-            <div className='trendingCards'>8</div>
-            </div>
+              {[...PRODUCTS.map((products) => (
+              <div className='womenTrendingCardsWrapper'> 
+                <img className="card"src={products.productImage} alt='img'/>
+                <div className='productName'> {products.productName} </div>
+              </div>
+              )),]}
+          </div>
         </section>
 
         <section className="productDisplayFrame">

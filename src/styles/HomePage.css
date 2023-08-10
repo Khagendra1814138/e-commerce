@@ -98,16 +98,6 @@
       overflow-x: scroll;
       overscroll-behavior-inline: contain;
     }
-    .trendingProduct image .productName{
-      margin: auto;
-      padding: 0.6rem;
-      padding-right: 5rem;
-      text-align: center;
-      font-weight: bold;
-      font-size: 18px;
-      color: white;
-      /* clip-path: polygon(10% 0, 80% 0, 90% 100%, 20% 100%); */
-    }
 }
 
 /* CUSTOME SCROOL BAR */
@@ -146,6 +136,17 @@
     border-radius: 10%;
   }
 }
+.productName{
+  margin: auto;
+  padding: 0.6rem;
+  padding-right: 5rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  /* clip-path: polygon(10% 0, 80% 0, 90% 100%, 20% 100%); */
+}
+
 
 .whoForSection{
   padding-top: 2rem;

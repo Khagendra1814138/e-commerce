@@ -16,28 +16,14 @@
     background-color: aqua;
 }
 
-.mySwiper{
-    height: 500px;
-    width: 90%;
-    border: 1px solid rebeccapurple;
-}
-.swiper-button-next, .swiper-button-prev{ 
-    border-radius: 10px;
-    padding: 10px;
-    background-color: teal;
-    color: white;
-    font-weight: bold;
-    transition: 0.5s ease;
-  
-    &:hover{
-        color: aquamarine;
-        transform: translateY(-10px);
-    }
-  }
 
-  .swiper-pagination-bullet{
-    width: 10px;
-    height: 10px;
-    background-color: white;
-    border: 5px solid teal;
-  }
+.kidTrendingCardsWrapper{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(0deg, MediumTurquoise, PeachPuff);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
