@@ -1,38 +1,61 @@
+@import "../../index.css";
+
+.sideFilterWrapper{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: sticky;
+    top: 0px;
+    padding-left: 20px;
+}
+
+
+.showHideButton{
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+    padding: 4px;
+    background: #00B9B9;
+    z-index: 1;
+    right: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    &:hover{
+        background: var(--navbarBtnHoverColour);
+        transform: translateY(0px);
+    }
+}
+
+.sideFilterIcon{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    margin: auto;
+    min-width: 12rem;
+    color: slategray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 .sideFilterFrame{
-    height: 57rem;
-    min-width: 18rem;
+    height: 55rem;
+    min-width: 15rem;
+    padding-left: 0px;
     padding: 2rem;
     display: grid;
     grid-auto-flow: row;
     gap: 2rem;
     /* box-shadow: 0px 1px 10px #888888; */
     text-align: center;
-    position: sticky;
-    top: 0px;
     overflow-y: scroll;
     overflow-x: hidden;
     overscroll-behavior-inline: contain;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-
-    .sideFilterIcon{
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 18px;
-        margin: auto;
-        width: 60%;
-        color: slategray;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-
-        .sfIcon{
-            border-radius: 10px;
-            padding: 4px;
-            background-color: #00B9B9;
-        }
-    }
 
     .filterOptions{
         height: 20rem;
@@ -69,6 +92,10 @@
 
 @media only screen and (max-width: 1000px) {
     .sideFilterFrame {
+        display: none;
+    }
+
+    .sideFilterWrapper{
         display: none;
     }
 }

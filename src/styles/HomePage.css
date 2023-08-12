@@ -145,6 +145,9 @@
   font-size: 18px;
   color: white;
   /* clip-path: polygon(10% 0, 80% 0, 90% 100%, 20% 100%); */
+  &:nth-child(1){
+    color: black;
+  }
 }
 
 
@@ -195,6 +198,10 @@
   background-color: aquamarine;
   text-decoration: none;
   transition: 0.5s ease;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 
   &:hover{
     transform: rotate(10deg);

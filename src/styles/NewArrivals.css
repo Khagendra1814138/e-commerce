@@ -8,14 +8,15 @@
 }
 
 .NewArrivals body, html {
+    scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     scroll-padding-top: 8rem;
-    scroll-behavior: smooth;
 }
 
 .section{
+    scroll-behavior: smooth;
     display: flex;
-    height: 100vh;
+    height: 110vh;
     width: auto;
     scroll-snap-align: start;
     scroll-snap-stop: always;

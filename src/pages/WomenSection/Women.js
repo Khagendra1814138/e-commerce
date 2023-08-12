@@ -1,13 +1,13 @@
 import React from "react";
 
 import "../../styles/WomensPage.css";
-import "../../styles/SideFilter.css";
 import "../../styles/ProductCard.css";
 import "../../styles/CSScomponents/Trending.css"
 
 import { PRODUCTS } from "../../pages/MenSection/MensProduct";
 import { Product } from "../../pages/MenSection/products";
 import { TrendingCreps } from "../../components/trendingShoesFilter";
+import { SideProductsFilter } from "../../components/sideProductsFilter/sideProductsFilter";
 
 function WomensPage() {
     return (
@@ -29,15 +29,7 @@ function WomensPage() {
         </section>
 
         <section className="productDisplayFrame">
-          <div className="sideFilterFrame"> Side Filter
-            <box className="filterOptions"> Gender </box>
-            <box className="filterOptions"> Colors </box>
-            <box className="filterOptions"> Size </box>
-            <box className="filterOptions"> Sport </box>
-            <box className="filterOptions"> Sales & Deal </box>
-          </div>
-
-            
+          <SideProductsFilter/>
           <div className="ProductDisplay"> {PRODUCTS.map((product) => (
               <Product data={product}/>
             ))} 

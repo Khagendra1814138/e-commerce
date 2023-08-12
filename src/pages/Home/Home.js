@@ -9,6 +9,10 @@ import Men from "../../images/home/mens.jpg";
 import Women from "../../images/home/womens.jpg";
 import Kids from "../../images/home/kids.jpg";
 
+import PumaLogo from "../../images/home/pumaLogo.svg";
+import NikeLogo from "../../images/home/nikeLogo.svg";
+import AdidasLogo from "../../images/home/adidasLogo.svg";
+
 import { TrendingCreps } from "../../components/trendingShoesFilter";
 
 import HomeSwiper from './homeSwiper';
@@ -75,9 +79,9 @@ function Home() {
 
       <h1>Shop By The Brands You Love</h1>
       <section className='whoForSection'>
-        <Link className='brandPage' exact to="/AdidasProducts">Adidas</Link>
-        <Link className='brandPage' exact to="/NikeProducts">Nike</Link>
-        <Link className='brandPage' exact to="/PumaProducts">Puma</Link>
+        <Link className='brandPage' exact to="/AdidasProducts" style={{backgroundImage: `url(${AdidasLogo})`}}></Link>
+        <Link className='brandPage' exact to="/NikeProducts" style={{backgroundImage: `url(${NikeLogo})`}}></Link>
+        <Link className='brandPage' exact to="/PumaProducts" style={{backgroundImage: `url(${PumaLogo})`}}></Link>
       </section>
     
     </div>

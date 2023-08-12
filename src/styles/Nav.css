@@ -3,7 +3,6 @@
     --btnHoverColour: #d6d6d6;
 }
 
-
 .navFrame{
     min-height: 80px;
     width: auto;
@@ -29,8 +28,10 @@
     background-color: none;
     background: rgb(0, 185, 185);
     box-shadow: none;
+    background-position: center;
+    background-size: contain;
     transition: 0.5s ease;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
     &:hover{
         background-color: var(--btnHoverColour);
     }

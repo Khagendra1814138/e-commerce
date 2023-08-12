@@ -4,9 +4,10 @@ import "../styles/Nav.css";
 import { menuData } from "./navMenu";
 
 import { ShoppingBag } from 'react-feather';
-import { Box } from 'react-feather';
 import { Heart } from 'react-feather';
 import { Menu } from 'react-feather';
+
+import Creps from "../images/nav/creps.png";
 
 
 function NavBar() {
@@ -33,7 +34,7 @@ function NavBar() {
 
   return (
       <nav className='navFrame'>
-        <Link exact to="/"><button className="siteLogo"><Box size={30} color="black"/></button></Link>
+        <Link exact to="/"><button className="siteLogo" style={{backgroundImage: `url(${Creps})`}}></button></Link>
         
         {(toggleMenu || screenWidth > 500) && (
           <div className="navlists">
