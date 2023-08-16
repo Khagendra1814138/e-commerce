@@ -4,8 +4,6 @@ import "../../styles/WomensPage.css";
 import "../../styles/ProductCard.css";
 import "../../styles/CSScomponents/Trending.css"
 
-import { PRODUCTS } from "../../pages/MenSection/MensProduct";
-import { Product } from "../../pages/MenSection/products";
 import { TrendingCreps } from "../../components/trendingShoesFilter";
 import { SideProductsFilter } from "../../components/sideProductsFilter/sideProductsFilter";
 
@@ -28,14 +26,7 @@ function WomensPage() {
           </div>
         </section>
 
-        <section className="productDisplayFrame">
-          <SideProductsFilter/>
-          <div className="ProductDisplay"> {PRODUCTS.map((product) => (
-              <Product data={product}/>
-            ))} 
-          </div>
-      
-        </section>
+        <SideProductsFilter/>
   
       </div>
     );

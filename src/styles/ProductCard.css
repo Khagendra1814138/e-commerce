@@ -4,17 +4,18 @@
     margin: auto;
     margin-top: 10rem;
     display: flex;
+    border-top: 2px solid #E5E5E5;
 }
 .ProductDisplay{
-    height: auto;
     width: 96%;
     margin: auto;
-    padding: 1rem 0rem 3rem 0rem;
+    margin-top: 0;
+    padding: 1.2rem 0rem 3rem 0rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 4rem;
-    justify-content: space-around;
-    align-items: center;
     background-color: white;
 }
 

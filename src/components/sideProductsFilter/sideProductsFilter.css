@@ -8,7 +8,9 @@
     align-items: flex-end;
     position: sticky;
     top: 0px;
-    padding-left: 20px;
+    border-right: 2px solid #E5E5E5;
+    border-bottom: 2px solid #E5E5E5;
+    border-bottom-right-radius: 10px;
 }
 
 
@@ -44,7 +46,6 @@
 .sideFilterFrame{
     height: 55rem;
     min-width: 15rem;
-    padding-left: 0px;
     padding: 2rem;
     display: grid;
     grid-auto-flow: row;
@@ -54,20 +55,37 @@
     overflow-y: scroll;
     overflow-x: hidden;
     overscroll-behavior-inline: contain;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-
-    .filterOptions{
+    border-top-right-radius: 5px;
+    border-top: 2px solid #E5E5E5;
+}   .filterOptions{
         height: 20rem;
         padding: 1rem;
-        border-top: 10px solid #E5E5E5;
+        border: 2px solid #E5E5E5;
+        border-radius: 10px;
         font-size: 18px;
         font-weight: bold;
-        padding-top: 0.5rem;
         color: slategray;
         text-align: start;
-    }
-}
+        display: flex;
+        flex-direction: column;
+    }   .selectorFrame{
+            height: 100%;
+            width: 100%;
+            border: none;
+            margin: auto;
+            margin-top: 1rem;
+            padding: 4px;
+            
+
+            &:focus{
+                outline: none !important;
+            }
+
+        }   .selectorOptions{
+                font-size: 14px;
+                font-weight: bold;
+            }
+
 
     /* CUSTOME SCROOL BAR */
 .sideFilterFrame::-webkit-scrollbar {
@@ -76,8 +94,7 @@
 
 .sideFilterFrame::-webkit-scrollbar-track {
     background: #EEEEEE;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
 }
 
 .sideFilterFrame::-webkit-scrollbar-thumb {

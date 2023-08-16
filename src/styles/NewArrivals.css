@@ -10,13 +10,13 @@
 .NewArrivals body, html {
     scroll-behavior: smooth;
     scroll-snap-type: y proximity;
-    scroll-padding-top: 8rem;
+    scroll-padding-top: 18rem;
 }
 
 .section{
     scroll-behavior: smooth;
     display: flex;
-    height: 110vh;
+    height: 80vh;
     width: auto;
     scroll-snap-align: start;
     scroll-snap-stop: always;
@@ -33,10 +33,4 @@
     &:nth-child(4){
         background: blue;
     }
-}
-
-
-.brandselector{
-    height: 100px;
-    width: 300px;
 }

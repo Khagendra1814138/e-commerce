@@ -24,6 +24,7 @@ export const PRODUCTS = [
     productImage: airForce1,
     trending: "Yes",
     brand: "Nike",
+    color: "White, Blue",
  },
  {
     id: 2,
@@ -32,6 +33,7 @@ export const PRODUCTS = [
     productImage: airJordan1Mid,
     trending: "Yes",
     brand: "Nike",
+    color: "White, Green",
  },
  {
     id: 3,
@@ -40,6 +42,7 @@ export const PRODUCTS = [
     productImage: airMax90,
     trending: "No",
     brand: "Nike",
+    color: "White, Red",
  },
  {
     id: 4,
@@ -48,6 +51,7 @@ export const PRODUCTS = [
     productImage: adidasSuperstar,
     trending: "Yes",
     brand: "Adidas",
+    color: "White, Green",
  },
  {
     id: 5,
@@ -56,6 +60,7 @@ export const PRODUCTS = [
     productImage: nikeDunkLow,
     trending: "Yes",
     brand: "Nike",
+    color: "White, Black",
  },
  {
     id: 6,
@@ -64,6 +69,7 @@ export const PRODUCTS = [
     productImage: airJordan3Retro,
     trending: "Yes",
     brand: "Nike",
+    color: "White, Blue",
  },
    {
       id: 7,
@@ -72,6 +78,7 @@ export const PRODUCTS = [
       productImage: pumaRSX3D,
       trending: "No",
       brand: "Puma",
+      color: "White, Black, Pink",
    },
    {
       id: 8,
@@ -80,6 +87,7 @@ export const PRODUCTS = [
       productImage: pumaSuede,
       trending: "No",
       brand: "Puma",
+      color: "Black",
    },
    {
       id: 9,
@@ -88,6 +96,7 @@ export const PRODUCTS = [
       productImage: airJordan1Low,
       trending: "Yes",
       brand: "Nike",
+      color: "White, Blue",
    },
    {
       id: 10,
@@ -96,6 +105,7 @@ export const PRODUCTS = [
       productImage: adidasForumLow,
       trending: "No",
       brand: "Adidas",
+      color: "White, Green",
    },
    {
       id: 11,
@@ -104,6 +114,7 @@ export const PRODUCTS = [
       productImage: adidasForumMid,
       trending: "No",
       brand: "Adidas",
+      color: "White, Purple",
    },
    {
       id: 12,
@@ -112,6 +123,7 @@ export const PRODUCTS = [
       productImage: adidasNMDV3,
       trending: "No",
       brand: "Adidas",
+      color: "Black, Blue, Red",
    },
    {
       id: 13,
@@ -120,6 +132,7 @@ export const PRODUCTS = [
       productImage: adidasRivalryLow,
       trending: "No",
       brand: "Adidas",
+      color: "White, Red",
    },
    {
       id: 14,
@@ -128,6 +141,7 @@ export const PRODUCTS = [
       productImage: adidasSolerGlide6,
       trending: "No",
       brand: "Adidas",
+      color: "White, Red",
    },
    {
       id: 15,
@@ -136,5 +150,6 @@ export const PRODUCTS = [
       productImage: adidasUltraboost23,
       trending: "No",
       brand: "Adidas",
+      color: "White, Green",
    },
 ];
