@@ -7,6 +7,10 @@ import airJordan1Low from "../../images/mensProducts/airJordan1Low.webp"
 
 import pumaRSX3D from "../../images/mensProducts/pumaRSX3D.webp"
 import pumaSuede from "../../images/mensProducts/pumaSuede.webp"
+import RSXGeek from "../../images/mensProducts/RS-XGeek.avif"
+import RSXEfektTurbo from "../../images/mensProducts/RS-X Efekt Turbo.avif"
+import SuedeClassicPink from "../../images/mensProducts/Suede-ClassicPink.avif"
+import SuedeClassicRed from "../../images/mensProducts/Suede-ClassicRed.avif"
 
 import adidasSuperstar from "../../images/mensProducts/adidasSuperstar.jpg"
 import adidasForumLow from "../../images/mensProducts/adidasForumLow.jpg"
@@ -73,7 +77,7 @@ export const PRODUCTS = [
  },
    {
       id: 7,
-      productName: "Puma RS-X-3D",
+      productName: "Puma RS-X 3D",
       price: "90.00",
       productImage: pumaRSX3D,
       trending: "No",
@@ -82,7 +86,7 @@ export const PRODUCTS = [
    },
    {
       id: 8,
-      productName: "Puma Suede",
+      productName: "Puma Suede Classic Black",
       price: "70.00",
       productImage: pumaSuede,
       trending: "No",
@@ -151,5 +155,41 @@ export const PRODUCTS = [
       trending: "No",
       brand: "Adidas",
       color: "White, Green",
+   },
+   {
+      id: 16,
+      productName: "Puma RS-X Geek",
+      price: "100.00",
+      productImage: RSXGeek,
+      trending: "No",
+      brand: "Puma",
+      color: "Grey, Orange",
+   },
+   {
+      id: 17,
+      productName: "Puma RS-X Efekt Turbo",
+      price: "100.00",
+      productImage: RSXEfektTurbo,
+      trending: "No",
+      brand: "Puma",
+      color: "Grey, Orange",
+   },
+   {
+      id: 18,
+      productName: "Puma Suede Classic Pink",
+      price: "70.00",
+      productImage: SuedeClassicPink,
+      trending: "No",
+      brand: "Puma",
+      color: "Pink",
+   },
+   {
+      id: 19,
+      productName: "Puma Suede Classic Pink",
+      price: "70.00",
+      productImage: SuedeClassicRed,
+      trending: "No",
+      brand: "Puma",
+      color: "Red",
    },
 ];

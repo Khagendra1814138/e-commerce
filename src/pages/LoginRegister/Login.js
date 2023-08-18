@@ -19,7 +19,7 @@ function LoginPage() {
           </form>   
 
           <div className="usefulBtnFrame">
-            <button><input type="checkbox" id="checkbox" value="Submit"></input>Remember Detail</button>
+            <button><input type="checkbox" id="checkbox" value="Submit"></input>Save Details</button>
             <button>Forgot Password?</button>
           </div>
           <button type="submit" value="LOG IN" className='signUp-In-Btn'>Submit</button>

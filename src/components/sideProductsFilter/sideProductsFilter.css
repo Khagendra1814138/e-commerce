@@ -55,7 +55,6 @@
     overflow-y: scroll;
     overflow-x: hidden;
     overscroll-behavior-inline: contain;
-    border-top-right-radius: 5px;
     border-top: 2px solid #E5E5E5;
 }   .filterOptions{
         height: 20rem;
@@ -84,6 +83,7 @@
         }   .selectorOptions{
                 font-size: 14px;
                 font-weight: bold;
+                font-family: 'Montserrat', sans-serif;
             }
 
 

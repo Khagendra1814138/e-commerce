@@ -1,4 +1,4 @@
-
+@import "../../index.css";
 
 .TopButton{
     height: 50px;
@@ -6,7 +6,7 @@
 
     position: fixed;
 
-    background: teal;
+    background: #00B9B9;
     border-radius: 10%;
 
     bottom: 2rem;
@@ -23,6 +23,10 @@
 
     transition: 0.5s ease;
     cursor: pointer;
+
+    &:hover{
+      background: var(--navbarBtnHoverColour);
+    }
 }
 
 

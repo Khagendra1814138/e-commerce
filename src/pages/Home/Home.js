@@ -61,7 +61,7 @@ function Home() {
         </div>
       </section>
 
-      <h1 ref={whoForSection}>Who are you shoipping for?</h1>
+      <h1 ref={whoForSection}>Who are you shopping for?</h1>
       <section className='whoForSection'>
         <image className='whoForChoicesFrame' style={{backgroundImage: `url(${Men})`}}>
           <button className='whoForButton' onClick={() => navigate("/Men")}> Men </button>
@@ -77,7 +77,7 @@ function Home() {
       </section>
 
 
-      <h1>Shop By The Brands You Love</h1>
+      <h1>Shop by the brands you love</h1>
       <section className='whoForSection'>
         <Link className='brandPage' exact to="/AdidasProducts" style={{backgroundImage: `url(${AdidasLogo})`}}></Link>
         <Link className='brandPage' exact to="/NikeProducts" style={{backgroundImage: `url(${NikeLogo})`}}></Link>
