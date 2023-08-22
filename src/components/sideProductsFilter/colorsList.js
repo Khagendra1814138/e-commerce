@@ -31,4 +31,8 @@ export const colorsList = [
         label: "Pink",
         value: "Pink",
     },
+    {
+        label: "Orange",
+        value: "Orange",
+    },
 ];

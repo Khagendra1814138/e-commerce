@@ -53,7 +53,7 @@ function NavBar() {
         </button>
 
         <button className="favouriteLink">
-          <Link exact to="/Cart">
+          <Link exact to="/Favourite">
             <Heart size={30} color="black"/>
           </Link>
         </button>

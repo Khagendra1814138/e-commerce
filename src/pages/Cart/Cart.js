@@ -40,7 +40,7 @@ export const CartPage = () => {
         </div>
       ) : (
         <div className="emptyBagFrame">
-          <h1> Your bag is empty! :( </h1>
+          <h1> Your bag is empty :( </h1>
           <button onClick={() => navigate("/")}> Continue Shopping </button>
         </div>
       

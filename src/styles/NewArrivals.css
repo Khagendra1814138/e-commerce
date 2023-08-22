@@ -34,3 +34,27 @@
         background: blue;
     }
 }
+
+
+
+.grid{
+    height: max-content;
+    width: auto;
+    background-color: royalblue;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid div{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    border: 1px solid rebeccapurple;
+}
+
+.grid .gridItems{
+    height: auto;
+    width: 100px;
+    background-color: aliceblue;
+    grid-row: span 2;
+}

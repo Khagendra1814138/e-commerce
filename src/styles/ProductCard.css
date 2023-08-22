@@ -1,3 +1,5 @@
+
+
 .productDisplayFrame{
     min-height: auto;
     width: auto;
@@ -69,7 +71,28 @@
 
 .productCard .detailFrame .productDetail .productPrice{
    font-weight: bold;
+   display: flex;
+   position: relative;
+   padding-left: 10px;
 }
+
+.productCard .detailFrame .productDetail .productPrice .addToFavouriteBTN{
+    border-radius: none;
+    box-shadow: none;
+    background-color: var(addToFavouriteBTN);
+    height: auto;
+    width: auto;
+    position: absolute;
+    right: 10px;
+    top: -30px;
+    background-color: none;
+    background: var(--navbarBtnHoverColour);
+    &:hover{
+        transform: translateX(0px);
+        background: slategray;
+    }
+ }
+ 
 
 
 .productCard .addToBag{

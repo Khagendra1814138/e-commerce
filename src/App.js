@@ -22,6 +22,7 @@ import NikeProducts from './pages/ProductsByBrands/NikeProducts';
 import PumaProducts from './pages/ProductsByBrands/PumaProducts';
 
 import {CartPage} from './pages/Cart/Cart';
+import { FavouritePage } from './pages/FavouriteBag/Favourite';
 import { ShopContextProvider } from './context/shop-context';
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
             <Route path='/Women' element={<WomensPage/>} />
             <Route path='/Kids' element={<KidsPage/>} />
             <Route path='/Cart' element={<CartPage/>} />
+            <Route path='/Favourite' element={<FavouritePage/>} />
             <Route path='/Login' element={<LoginPage/>} />
             <Route path='/Register' element={<RegisterPage/>} />
 

@@ -44,7 +44,7 @@ button{
   background: linear-gradient(65deg, pink, aqua);
 
   &:hover{
-    transform: translateY(-10px);
+    transform: translateY(-6px);
     color: white;
   }
 }

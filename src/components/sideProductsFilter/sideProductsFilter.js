@@ -9,6 +9,7 @@ import { PRODUCTS } from "../../pages/MenSection/MensProduct";
 import { Product } from "../../pages/MenSection/products";
 import { brandsList } from "./brandsList";
 import { colorsList } from "./colorsList";
+import { sportList } from "./sporttype";
 
 // export const BrandFilterCreps = PRODUCTS.filter(filteredCreps => {
 //     return filteredCreps.brand.includes(selectedBrand) && filteredCreps.color.includes(selectedColor);
@@ -21,9 +22,12 @@ export const  SideProductsFilter = () =>{
 
     const [selectedBrand, setSelectedBrand] = useState("");
     const [selectedColor, setSelectedColor] = useState("");
+    const [selectedSport, setSelectedSport] = useState("");
 
     const FilterCreps = PRODUCTS.filter(filteredCreps => {
-            return filteredCreps.brand.includes(selectedBrand) && filteredCreps.color.includes(selectedColor);
+            return filteredCreps.brand.includes(selectedBrand) && 
+            filteredCreps.color.includes(selectedColor) && 
+            filteredCreps.sportType.includes(selectedSport); 
         }
     );
    
@@ -67,8 +71,22 @@ export const  SideProductsFilter = () =>{
                         </select> 
                     </box>
                     
-                    <box className="filterOptions"> Sport </box>
-                    <box className="filterOptions"> Sales & Deal </box>
+                    <box className="filterOptions"> Sport 
+                        <select className="selectorFrame"
+                            multiple={true}
+                            value={selectedSport}
+                            onChange={e => {
+                            const options = [...e.target.selectedOptions];
+                            const values = options.map(option => option.value);
+                            setSelectedSport(values);
+                            }}
+                        > 
+                            {sportList.map((option) => (
+                            <option className="selectorOptions" value={option.value}>{option.label}</option>
+                            ))}
+                        </select> 
+                    </box>
+
                     <box className="filterOptions"> Size </box>
                 </div> 
                 }

@@ -11,6 +11,15 @@ import "../../App.css"
         <body className="snappingWrapper">
 
           <div className="section">
+
+            <grid className="grid">
+                <div></div>
+                <div className="gridItems"></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </grid>
+
           </div>
 
           <div className="section"><h1>Section2</h1></div>
