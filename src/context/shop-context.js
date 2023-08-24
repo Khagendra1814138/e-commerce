@@ -6,6 +6,7 @@ import { TotalProductsArray } from "../assets/AllProductsArray";
 
 export const ShopContext = createContext (null);
 
+//creating the cart array
 const getDefaultCart = () => {
   let cart = {};
   for (let i = 1; i < TotalProductsArray.length + 1; i++) {
@@ -15,12 +16,24 @@ const getDefaultCart = () => {
 };
 
 
+//creating the favourite bag array.
+const getDefaultFavourite = () => {
+  let favoyruteBag = {};
+  for (let i = 1; i < TotalProductsArray.length + 1; i++) {
+    favoyruteBag[i] = 0;
+  }
+  return favoyruteBag;
+};
+
+
   
 
 export const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState(getDefaultCart());
-  const [setFavouriteItems] = useState(getDefaultCart());
 
+  const [setFavouriteItems] = useState(getDefaultFavourite());
+
+  //Gets the total amount cost of the cart.
   const getTotalCartAmount = () => {
     let totalAmount = 0;
 
@@ -33,7 +46,7 @@ export const ShopContextProvider = (props) => {
     return (Math.round(totalAmount * 100) / 100).toFixed(2);
   }
 
-  
+  //Gets the total products amount qyantity inside the cart.
   const getTotalProductsAmount = () => {
     let totalProductsAmount = 0;
 

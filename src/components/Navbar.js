@@ -12,6 +12,7 @@ import Creps from "../images/nav/creps.png";
 import { ShopContext } from "../context/shop-context";
 
 function NavBar() {
+  //Getting and setting the total products count from the shop context.
   const {getTotalProductsAmount} = useContext(ShopContext);
   const totalProductsAmount = getTotalProductsAmount();
 
