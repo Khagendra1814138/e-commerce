@@ -9,7 +9,7 @@ import { Minimize2 } from 'react-feather';
 import { Product } from "../../pages/MenSection/products";
 import { brandsList } from "./brandsList";
 import { colorsList } from "./colorsList";
-import { sportList } from "./sportType";
+import { sportList } from "./sporttype";
 
 // import {AllProductsArray} from "../../assets/productsArray/productsArrayMerge";
 import { TotalProductsArray } from "../../assets/AllProductsArray";
