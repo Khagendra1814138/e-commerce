@@ -2,7 +2,8 @@ import React, { useContext } from "react";
 
 import "../../styles/CartPage.css";
 
-import { PRODUCTS } from "../MenSection/MensProduct";
+// import { AllProductsArray } from "../../assets/productsArray/productsArrayMerge";
+import { TotalProductsArray } from "../../assets/AllProductsArray";
 import { ShopContext } from "../../context/shop-context";
 import { CartItem } from "./cart-item";
 
@@ -19,7 +20,7 @@ export const CartPage = () => {
     <div className="CartPage">
       <div className="cartFrame">
         <div className="cart">
-          {PRODUCTS.map((product) => {
+          {TotalProductsArray.map((product) => {
             if (cartItems[product.id] !== 0) {
               return <CartItem data={product} />;
             } else

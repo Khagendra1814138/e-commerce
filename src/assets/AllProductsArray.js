@@ -1,41 +1,41 @@
-import airForce1 from "../../images/mensProducts/airForce1.webp"
-import airJordan1Mid from "../../images/mensProducts/airJordan1Mid.webp"
-import airMax90 from "../../images/mensProducts/airMax90.webp"
-import airJordan3Retro from "../../images/mensProducts/airJordan3Retro.webp"
-import nikeDunkLow from "../../images/mensProducts/dunkLow.webp"
-import airJordan1Low from "../../images/mensProducts/airJordan1Low.webp"
-import infinityrn4 from "../../images/mensProducts/nike/infinityrn-4-running-White.jpg"
-import invincible3 from "../../images/mensProducts/nike/invincible-3-running-White.jpg"
-import invpegasus40 from "../../images/mensProducts/nike/pegasus-40-running-Blue.jpg"
-import airjordanxxxvii from "../../images/mensProducts/nike/air-jordan-xxxvii-low-basketball-White.jpg"
-import luka1 from "../../images/mensProducts/nike/luka-1-basketball-BluePurple.jpg"
+
+import airForce1 from "../images/products/nike/airForce1.webp"
+import airJordan1Mid from "../images/products/nike/airJordan1Mid.webp"
+import airMax90 from "../images/products/nike/airMax90.webp"
+import airJordan3Retro from "../images/products/nike/airJordan3Retro.webp"
+import nikeDunkLow from "../images/products/nike/dunkLow.webp"
+import airJordan1Low from "../images/products/nike/airJordan1Low.webp"
+import infinityrn4 from "../images/products/nike/infinityrn-4-running-White.jpg"
+import invincible3 from "../images/products/nike/invincible-3-running-White.jpg"
+import invpegasus40 from "../images/products/nike/pegasus-40-running-Blue.jpg"
+import airjordanxxxvii from "../images/products/nike/air-jordan-xxxvii-low-basketball-White.jpg"
+import luka1 from "../images/products/nike/luka-1-basketball-BluePurple.jpg"
+
+import pumaRSX3D from "../images/products/puma/pumaRSX3D.webp"
+import pumaSuede from "../images/products/puma/pumaSuede.webp"
+import RSXGeek from "../images/products/puma/RS-XGeek.avif"
+import RSXEfektTurbo from "../images/products/puma/RS-X Efekt Turbo.avif"
+import SuedeClassicPink from "../images/products/puma/Suede-ClassicPink.avif"
+import SuedeClassicRed from "../images/products/puma/Suede-ClassicRed.avif"
+import ForeverRunNITRO from "../images/products/puma/ForeverRun-NITRO-Running-Orange140.avif"
+import MB_02_Fade from "../images/products/puma/MB_02_Fade-Team_PurpleBlue130.jpg"
+
+import adidasSuperstar from "../images/products/adidas/adidasSuperstar.jpg"
+import adidasForumLow from "../images/products/adidas/adidasForumLow.jpg"
+import adidasForumMid from "../images/products/adidas/adidasForumMid.jpg"
+import adidasNMDV3 from "../images/products/adidas/adidasNMDV3.jpg"
+import adidasRivalryLow from "../images/products/adidas/adidasRivalryLow.jpg"
+import adidasSolerGlide6 from "../images/products/adidas/adidasSolerGlide6.jpg"
+import adidasUltraboost23 from "../images/products/adidas/adidasUltraboost23.jpg"
+import DON_Issue_4 from "../images/products/adidas/D.O.N._Issue_4__Purple100.avif"
+import Trae_Unlimited from "../images/products/adidas/Trae_Unlimited_Grey85.avif"
+import Superstar_XLG from "../images/products/adidas/Superstar_XLG_WhiteBlue90.avif"
+import Stan_Smith from "../images/products/adidas/Stan_Smith_WhiteGreen85.avif"
 
 
-import pumaRSX3D from "../../images/mensProducts/pumaRSX3D.webp"
-import pumaSuede from "../../images/mensProducts/pumaSuede.webp"
-import RSXGeek from "../../images/mensProducts/RS-XGeek.avif"
-import RSXEfektTurbo from "../../images/mensProducts/RS-X Efekt Turbo.avif"
-import SuedeClassicPink from "../../images/mensProducts/Suede-ClassicPink.avif"
-import SuedeClassicRed from "../../images/mensProducts/Suede-ClassicRed.avif"
-import ForeverRunNITRO from "../../images/mensProducts/puma/ForeverRun-NITRO-Running-Orange140.avif"
-import MB_02_Fade from "../../images/mensProducts/puma/MB_02_Fade-Team_PurpleBlue130.jpg"
-
-import adidasSuperstar from "../../images/mensProducts/adidasSuperstar.jpg"
-import adidasForumLow from "../../images/mensProducts/adidasForumLow.jpg"
-import adidasForumMid from "../../images/mensProducts/adidasForumMid.jpg"
-import adidasNMDV3 from "../../images/mensProducts/adidasNMDV3.jpg"
-import adidasRivalryLow from "../../images/mensProducts/adidasRivalryLow.jpg"
-import adidasSolerGlide6 from "../../images/mensProducts/adidasSolerGlide6.jpg"
-import adidasUltraboost23 from "../../images/mensProducts/adidasUltraboost23.jpg"
-import DON_Issue_4 from "../../images/mensProducts/adidas/D.O.N._Issue_4__Purple100.avif"
-import Trae_Unlimited from "../../images/mensProducts/adidas/Trae_Unlimited_Grey85.avif"
-import Superstar_XLG from "../../images/mensProducts/adidas/Superstar_XLG_WhiteBlue90.avif"
-import Stan_Smith from "../../images/mensProducts/adidas/Stan_Smith_WhiteGreen85.avif"
 
 
-
-
-export const PRODUCTS = [
+export const TotalProductsArray = [
  {
     id: 1,
     productName: "Air Force 1",

@@ -5,11 +5,14 @@ import "./sideProductsFilter.css";
 import { Menu } from 'react-feather';
 import { Minimize2 } from 'react-feather';
 
-import { PRODUCTS } from "../../pages/MenSection/MensProduct";
+// import { PRODUCTS } from "../../pages/MenSection/MensProduct";
 import { Product } from "../../pages/MenSection/products";
 import { brandsList } from "./brandsList";
 import { colorsList } from "./colorsList";
-import { sportList } from "./sporttype";
+import { sportList } from "./sportType";
+
+// import {AllProductsArray} from "../../assets/productsArray/productsArrayMerge";
+import { TotalProductsArray } from "../../assets/AllProductsArray";
 
 // export const BrandFilterCreps = PRODUCTS.filter(filteredCreps => {
 //     return filteredCreps.brand.includes(selectedBrand) && filteredCreps.color.includes(selectedColor);
@@ -24,7 +27,7 @@ export const  SideProductsFilter = () =>{
     const [selectedColor, setSelectedColor] = useState("");
     const [selectedSport, setSelectedSport] = useState("");
 
-    const FilterCreps = PRODUCTS.filter(filteredCreps => {
+    const FilterCreps = TotalProductsArray.filter(filteredCreps => {
             return filteredCreps.brand.includes(selectedBrand) && 
             filteredCreps.color.includes(selectedColor) && 
             filteredCreps.sportType.includes(selectedSport); 

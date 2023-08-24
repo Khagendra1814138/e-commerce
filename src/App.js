@@ -21,7 +21,7 @@ import AdidasProducts from './pages/ProductsByBrands/AdidasProducts';
 import NikeProducts from './pages/ProductsByBrands/NikeProducts';
 import PumaProducts from './pages/ProductsByBrands/PumaProducts';
 
-import {CartPage} from './pages/Cart/Cart';
+import { CartPage } from './pages/Cart/Cart';
 import { FavouritePage } from './pages/FavouriteBag/Favourite';
 import { ShopContextProvider } from './context/shop-context';
 

@@ -1,8 +1,8 @@
 
-import { PRODUCTS } from "../pages/MenSection/MensProduct";
+import { AllProductsArray } from "../assets/productsArray/productsArrayMerge";
 
 
-export const TrendingCreps = PRODUCTS.filter(trendingProducts => {
+export const TrendingCreps = AllProductsArray.filter(trendingProducts => {
         return trendingProducts.trending === "Yes";
     }
 );

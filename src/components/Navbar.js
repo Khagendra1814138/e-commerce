@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Nav.css";
 import { menuData } from "./navMenu";
@@ -9,8 +9,12 @@ import { Menu } from 'react-feather';
 
 import Creps from "../images/nav/creps.png";
 
+import { ShopContext } from "../context/shop-context";
 
 function NavBar() {
+  const {getTotalProductsAmount} = useContext(ShopContext);
+  const totalProductsAmount = getTotalProductsAmount();
+
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const toggleNav = () => {
@@ -46,7 +50,7 @@ function NavBar() {
           </div>
         )}
         
-        <button className="cartLink">
+        <button className="cartLink"> <span>{totalProductsAmount}</span>
           <Link exact to="/Cart">
             <ShoppingBag size={30} color="black"/>
           </Link>
