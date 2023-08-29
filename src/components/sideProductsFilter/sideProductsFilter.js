@@ -37,7 +37,7 @@ export const  SideProductsFilter = () =>{
     return (
         <section className="productDisplayFrame">
             <div className="sideFilterWrapper">
-                <div className="sideFilterIcon">Shoes Filter 
+                <div className="sideFilterIcon"> Filter 
                 <button className="showHideButton" onClick={() => setShow(!show)}>{show === true ? <Minimize2 size={30} color="black"/> : <Menu size={30} color="black"/>}</button>
                 </div>
                 {show &&

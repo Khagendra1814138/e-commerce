@@ -46,7 +46,7 @@ function Home() {
           <br></br>
           <br></br> 
           <p>Shop some of the most viewed and desired products by our customers.</p>
-          <button>Shop</button>
+          <button onClick={() => navigate("/TrendingProducts")}>Shop</button>
         </div>
 
         <div className='trendingProduct'>
