@@ -9,6 +9,7 @@ function LoginPage() {
     return (
       <div className="loginPage">   
         <box className = "formFrame">
+          <span className="welcome">🙏</span>
           <div className="avatarIcon"><User size={130} color="black"/></div>
           <form className = "loginForm">
             <label className='registerLabel'><Mail size={30} color="black"/>EMAIL</label>

@@ -13,6 +13,7 @@ function RegisterPage() {
       <div className="registerPage">
 
         <box className = "formFrame">
+          <span className="wave">👋</span>
           <div className="avatarIcon"><BookOpen size={130} color="black"/></div>
             <form className="loginForm">
               <label className='registerLabel'><User size={30} color="black"/>ENTER NAME</label>
