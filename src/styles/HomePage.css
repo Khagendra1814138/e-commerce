@@ -153,8 +153,8 @@
 
 
 .whoForSection{
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   margin: auto;
   margin-top: 4rem;
   display: flex;
@@ -190,22 +190,22 @@
 }
 
 .whoForSection .brandPage{
-  height: 180px;
+  height: 150px;
   width: 180px;
   border-radius: 10px;
+  padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: aquamarine;
   text-decoration: none;
   transition: 0.5s ease;
-
+  background: skyblue;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 
   &:hover{
-    transform: rotate(10deg);
+    transform: translateY(10px);
     background-color: teal;
   }
 }

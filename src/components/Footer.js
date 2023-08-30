@@ -11,21 +11,34 @@ import { Youtube } from 'react-feather';
 function Footer() {
     return (
       <div className="footerSection">
-          <div className="footerLinksFrame">
-            <Link className="footerLinks" exact to="/">Home</Link>
-            <Link className="footerLinks" exact to="/Men">Mens</Link>
-            <Link className="footerLinks" exact to="/Women">Womens</Link>
-            <Link className="footerLinks" exact to="/Kids">Kids</Link>
+          <label></label>
+          <div className="middleSection">
+            <div className="footerLinksFrame">
+              <Link className="footerLinks" exact to="/">Home</Link>
+              <Link className="footerLinks" exact to="/Men">Mens</Link>
+              <Link className="footerLinks" exact to="/Women">Womens</Link>
+              <Link className="footerLinks" exact to="/Kids">Kids</Link>
+            </div>
+
+            <div className="footerLinksFrame">
+              <box><Facebook size={30} color="teal"/></box>
+              <box><Instagram size={30} color="teal"/></box>
+              <box><Twitter size={30} color="teal"/></box>
+              <box><Youtube size={30} color="teal"/></box>
+            </div>
+
+            <div className="footerLinksFrame">
+              <Link className="footerSettingLink" >Terms & Conditions</Link>
+              <Link className="footerSettingLink" >Privacy & Cookie Policy</Link>
+              <Link className="footerSettingLink" >Cookie Settings</Link>
+            </div>
           </div>
 
-          <div className="socialmediaLinks">
-            <box><Facebook size={30} color="teal"/></box>
-            <box><Instagram size={30} color="teal"/></box>
-            <box><Twitter size={30} color="teal"/></box>
-            <box><Youtube size={30} color="teal"/></box>
-          </div>
+          
 
-          <div className="bottomInformation">© 2023</div>
+          <div className="bottomSection">
+            <label> Copyright © 2023 Creps Check, All rights reserved.</label>
+          </div>
       </div>
     );
   }

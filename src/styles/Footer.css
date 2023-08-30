@@ -13,10 +13,12 @@
 
 
 .footerLinksFrame{
-    width: auto;
+    height: 18rem;
+    width: 10rem;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
 }
 .footerLinks{
     padding: 10px;
@@ -29,20 +31,29 @@
     }
 }
 
+.footerLinksFrame .footerSettingLink {
+    color: rgba(255, 255, 255, 0.678);
+    text-decoration: none;
 
+    &:hover{
+        color: white;
+    }
+}
 
-.socialmediaLinks{
-    width: 300px;
+.middleSection{
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    padding: 10px;
-
+    border: 1px soild rgba(255, 255, 255, 0.678);
 }
-.socialmediaLinks box{
+
+
+.footerLinksFrame box{
+    width: 60px;
     cursor: pointer;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     padding: 10px;
     border-radius: 10px;
@@ -56,6 +67,8 @@
 
 
 
-.bottomInformation{
-    padding: 10px;
+.bottomSection{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }

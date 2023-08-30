@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRef } from 'react';
-import {useNavigate, Link} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 
 import '../../App.css';
 import "../../styles/HomePage.css";
@@ -64,24 +64,24 @@ function Home() {
       <h1 ref={whoForSection}>Who are you shopping for?</h1>
       <section className='whoForSection'>
         <image className='whoForChoicesFrame' style={{backgroundImage: `url(${Men})`}}>
-          <button className='whoForButton' onClick={() => navigate("/Men")}> Men </button>
+          <button className='whoForButton' onClick={() => navigate("/Men")}> Men's </button>
         </image>
 
         <image className='whoForChoicesFrame' style={{backgroundImage: `url(${Women})`}}>
-          <button className='whoForButton' onClick={() => navigate("/Women")}> Women </button>
+          <button className='whoForButton' onClick={() => navigate("/Women")}> Women's </button>
         </image>
 
         <image className='whoForChoicesFrame' style={{backgroundImage: `url(${Kids})`}}>
-          <button className='whoForButton' onClick={() => navigate("/Kids")}> Kids </button>
+          <button className='whoForButton' onClick={() => navigate("/Kids")}> Kids' </button>
         </image>
       </section>
 
 
       <h1>Shop by the brands you love</h1>
       <section className='whoForSection'>
-        <Link className='brandPage' exact to="/AdidasProducts" style={{backgroundImage: `url(${AdidasLogo})`}}></Link>
-        <Link className='brandPage' exact to="/NikeProducts" style={{backgroundImage: `url(${NikeLogo})`}}></Link>
-        <Link className='brandPage' exact to="/PumaProducts" style={{backgroundImage: `url(${PumaLogo})`}}></Link>
+        <button className='brandPage' onClick={() => navigate("/AdidasProducts")} style={{backgroundImage: `url(${AdidasLogo})`}}></button>
+        <button className='brandPage' onClick={() => navigate("/NikeProducts")} style={{backgroundImage: `url(${NikeLogo})`}}></button>
+        <button className='brandPage' onClick={() => navigate("/PumaProducts")} style={{backgroundImage: `url(${PumaLogo})`}}></button>
       </section>
     
     </div>
