@@ -18,7 +18,7 @@ function MensPage() {
         <h1>MENS FOOTWARE</h1>
         <image className="focusedProduct">Product Image</image>
       </header> */}
-      <h1>MENS FOOTWARE</h1>
+      <h1>MENS FOOTWEAR</h1>
 
       <section className="trendingThisWeekSection">
         <h1>Men's Trending This Week</h1>

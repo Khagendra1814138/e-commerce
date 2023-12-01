@@ -11,7 +11,7 @@ function WomensPage() {
     return (
       <div className="WomensPage">
 
-      <h1>WOMENS FOOTWARE</h1>
+      <h1>WOMENS FOOTWEAR</h1>
         <section className="trendingThisWeekSection_Women">
           <h1>Women's Trending This Week</h1>
           <div className='trendingProductsFrame'>
