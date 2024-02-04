@@ -1,13 +1,8 @@
-
 .NewArrivals{
-    height: auto;
-    width: auto;
-    /* padding-top: 10rem;
     padding-bottom: 20rem;
-    background-color: green; */
 }
 
-.NewArrivals body, html {
+/* .NewArrivals body, html {
     scroll-behavior: smooth;
     scroll-snap-type: y proximity;
     scroll-padding-top: 18rem;
@@ -57,4 +52,4 @@
     width: 100px;
     background-color: aliceblue;
     grid-row: span 2;
-}
+} */

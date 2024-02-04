@@ -21,10 +21,10 @@ function Footer() {
             </div>
 
             <div className="footerLinksFrame">
-              <box><Facebook size={30} color="teal"/></box>
-              <box><Instagram size={30} color="teal"/></box>
-              <box><Twitter size={30} color="teal"/></box>
-              <box><Youtube size={30} color="teal"/></box>
+              <box><Facebook size={30} /></box>
+              <box><Instagram size={30} /></box>
+              <box><Twitter size={30} /></box>
+              <box><Youtube size={30} /></box>
             </div>
 
             <div className="footerLinksFrame">

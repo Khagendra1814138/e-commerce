@@ -9,14 +9,11 @@ import Men from "../../images/home/mens.jpg";
 import Women from "../../images/home/womens.jpg";
 import Kids from "../../images/home/kids.jpg";
 
-import PumaLogo from "../../images/home/pumaLogo.svg";
-import NikeLogo from "../../images/home/nikeLogo.svg";
-import AdidasLogo from "../../images/home/adidasLogo.svg";
 
 import { TrendingCreps } from "../../components/trendingShoesFilter";
 
 import HomeSwiper from './homeSwiper';
-
+import { ShopByBrand } from './brandSwiper';
 
 function Home() {
   const whoForSection = useRef(null);
@@ -42,26 +39,45 @@ function Home() {
 
       <section className='TrendingSection'>
         <div className='trendingInformationFrame'>
-          <h2>Trending</h2>
+          <h2>TRENDING</h2>
           <br></br>
           <br></br> 
-          <p>Shop some of the most viewed and desired products by our customers.</p>
+          <p>Refresh your rotation with our latest drop.</p>
           <button onClick={() => navigate("/TrendingProducts")}>Shop</button>
         </div>
 
         <div className='trendingProduct'>
           {TrendingCreps.map((trendingCreps) => (
-
             <image> 
-                <img className="card"src={trendingCreps.productImage} alt='img'/>
-                <div className='productName'> {trendingCreps.productName} </div>
+                <div className="card" style={{backgroundImage: `url(${trendingCreps.productImage})`}} alt='img'></div>
+                <div className='productName'> {trendingCreps.productName}</div>
+                <div className='productPrice'> £{trendingCreps.price}</div>
             </image>
-
           ))}
         </div>
       </section>
 
-      <h1 ref={whoForSection}>Who are you shopping for?</h1>
+      <section className='TrendingSection'>
+        <div className='trendingProduct'>
+          {TrendingCreps.map((trendingCreps) => (
+            <image> 
+                <div className="card" style={{backgroundImage: `url(${trendingCreps.productImage})`}} alt='img'></div>
+                <div className='productName'> {trendingCreps.productName}</div>
+                <div className='productPrice'> £{trendingCreps.price}</div>
+            </image>
+          ))}
+        </div>
+
+        <div className='trendingInformationFrame'>
+          <h2>NEW ARRIVALS</h2>
+          <br></br>
+          <br></br> 
+          <p>Shop some of the most viewed and desired products by our customers.</p>
+          <button onClick={() => navigate("/TrendingProducts")}>Shop</button>
+        </div>
+      </section>
+
+      <h1 ref={whoForSection}>SHOP BY CATEGORY</h1>
       <section className='whoForSection'>
         <image className='whoForChoicesFrame' style={{backgroundImage: `url(${Men})`}}>
           <button className='whoForButton' onClick={() => navigate("/Men")}> Men's </button>
@@ -76,12 +92,81 @@ function Home() {
         </image>
       </section>
 
-
-      <h1>Shop by the brands you love</h1>
+      <h1>BRANDS YOU LOVE</h1>
       <section className='whoForSection'>
-        <button className='brandPage' onClick={() => navigate("/AdidasProducts")} style={{backgroundImage: `url(${AdidasLogo})`}}></button>
-        <button className='brandPage' onClick={() => navigate("/NikeProducts")} style={{backgroundImage: `url(${NikeLogo})`}}></button>
-        <button className='brandPage' onClick={() => navigate("/PumaProducts")} style={{backgroundImage: `url(${PumaLogo})`}}></button>
+        <ShopByBrand/>
+        <button className='showAllBrandsBtn'>Show All Brands</button>
+      </section>
+
+      <h1>HAPPY CUSTOMERS</h1>
+      <section className='sectionCustomerReviews'>
+        <div className='customersQuoteCard'>
+          <div className='customerImageName'>
+            <div className='customerImage'></div>
+            <div className='customeName'>Rhian</div>
+          </div>
+
+          <div className='reviewStars'>
+            <div className='goldStar'></div>
+            <div className='goldStar'></div>
+            <div className='goldStar'></div>
+            <div className='goldStar'></div>
+            <div className='goldStar'></div>
+          </div>
+
+          <div className='reviewQuote'>
+            “Very helpful and corrected our delivery problem”
+          </div>
+          <div className='reviewNameDate'>1 day ago</div>
+        </div>
+
+        <div className='customersQuoteCard'>
+          <div className='customerImageName'>
+            <div className='customerImage'></div>
+            <div className='customeName'>Amy</div>
+          </div>
+
+          <div className='reviewStars'>
+            <div className='goldStar'></div>
+            <div className='goldStar'></div>
+            <div className='goldStar'></div>
+            <div className='goldStar'></div>
+            <div className='greyStar'></div>
+          </div>
+
+          <div className='reviewQuote'>
+            “Very helpful and corrected our delivery problem”
+          </div>
+          <div className='reviewNameDate'>6 hours ago</div>
+        </div>
+
+        <div className='customersQuoteCard'>
+          <div className='customerImageName'>
+            <div className='customerImage'></div>
+            <div className='customeName'>Jas</div>
+          </div>
+
+          <div className='reviewStars'>
+            <div className='goldStar'></div>
+            <div className='goldStar'></div>
+            <div className='goldStar'></div>
+            <div className='goldStar'></div>
+            <div className='goldStar'></div>
+          </div>
+
+          <div className='reviewQuote'>
+            “Rapid delivery and never get my order wrong. What else could I ask for”
+          </div>
+          <div className='reviewNameDate'>2 day ago</div>
+        </div>
+      </section>
+
+      <section className='sectionEmailRegister'>
+            <h1>Want To Get 10% Off Your Next Order?</h1>
+            <h2>Sign up for the latest news, products and offers</h2>
+            <input className='emailBox' placeholder='Enter Email Address'></input>
+            <h2>We'll use your information in accordance with our Privacy Notice</h2>
+            <h2>*Terms & Conditions Apply</h2>
       </section>
     
     </div>

@@ -12,7 +12,7 @@
 }
 
 .formFrame{
-    width: min-content;
+    width: 500px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -21,8 +21,8 @@
     padding: 4rem;
     border-radius: 20px;
     position: relative;
-    background-color: teal;
-    box-shadow: 4px 4px rgb(0, 153, 153);
+    background-color: #008080;
+    box-shadow: 6px 6px rgb(0, 153, 153);
 }
 
 .welcome{
@@ -59,7 +59,7 @@
     align-items: center;
     border-radius: 1rem;
     padding: 2rem;
-    padding-top: 4rem;
+    padding-top: 2rem;
     background-color: var(--navbarBtnColour);
 }
 
@@ -110,7 +110,8 @@
 }
 .inputBox{
     width: 100%;
-    background: gainsboro;
+    background: white;
+    box-shadow: 4px 4px #EEEEEE;
     height: 34px;
     border-radius: 4px;
     display: flex;
@@ -119,4 +120,5 @@
     margin: auto;
     color: rgb(35,47,62);
     border: none;
+    padding: 5px;
 }

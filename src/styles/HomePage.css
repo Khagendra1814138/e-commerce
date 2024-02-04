@@ -7,7 +7,7 @@
 
 .homePage{
   padding-top: 0rem;
-  padding-bottom: 10rem
+  padding-bottom: 0rem
 }
 
 .homePage h1{
@@ -46,7 +46,7 @@
   margin-top: 10rem;
   display: flex;
   align-items: center;
-  background: linear-gradient(45deg, #D2D1D4, rgba(127, 255, 212, 0.774));
+  /* background: linear-gradient(45deg, #D2D1D4, rgba(127, 255, 212, 0.774)); */
     
     .trendingInformationFrame{
       height: 100%;
@@ -93,7 +93,8 @@
       display: grid;
       grid-auto-flow: column;
       grid-auto-columns: 35%;
-      align-items: center;
+      align-items: flex-start;
+      justify-content: flex-start;
       
       overflow-y: hidden;
       overflow-x: scroll;
@@ -103,15 +104,15 @@
 
 /* CUSTOME SCROOL BAR */
   .trendingProduct::-webkit-scrollbar {
-    height: 1rem;
+    height: 1.5rem;
   }
   
   .trendingProduct::-webkit-scrollbar-track {
-    background: teal;
+    background: #87CEEB;
   }
   
   .trendingProduct::-webkit-scrollbar-thumb {
-    background-color: pink;
+    background-color: #008080;
     border-radius: 10px;
   }
   
@@ -122,47 +123,43 @@
 
 
 .card{
-  height: auto;
+  height: 600px;
   width: 500px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  object-fit: contain;
-  object-position: center;
+  align-items: flex-end;
+  
+  background-size: contain;
+  background-position: center;
+
   clip-path: polygon(25% 0%, 94% 0, 75% 100%, 6% 100%);
   transition: 0.5s ease;
   &:hover{
     transform: translateX(10px);
-    clip-path: polygon(25% 0%, 200% 0, 75% 100%, -100% 100%);
-    border-radius: 10%;
+    clip-path: polygon(15% 0%, 200% 0, 75% 100%, -100% 100%);
   }
 }
-.productName{
+.productName, .productPrice{
   margin: auto;
   padding: 0.6rem;
-  padding-right: 5rem;
   text-align: center;
   font-weight: bold;
   font-size: 18px;
-  color: white;
-  /* clip-path: polygon(10% 0, 80% 0, 90% 100%, 20% 100%); */
-  &:nth-child(1){
-    color: black;
-  }
+  color: black;
 }
 
 
 .whoForSection{
+  width: 100%;
   padding-top: 4rem;
   padding-bottom: 4rem;
   margin: auto;
-  margin-top: 4rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  background: linear-gradient(90deg, aquamarine, skyblue);
-
+  /* background: linear-gradient(90deg, aquamarine, skyblue); */
+  perspective: 1000px;
   gap: 1rem;
 
   .whoForChoicesFrame{
@@ -172,13 +169,12 @@
     display: flex;
     border-radius: 0rem;
     transition: 0.5s ease;
-
     background-size: cover;
     background-position: center;
     
     &:hover{
-      border-bottom-left-radius: 6rem;
-      border-top-right-radius: 6rem;
+      border-radius: 40px;
+      transform: rotateX(5deg);
     }
   }
 }
@@ -186,26 +182,150 @@
 .whoForSection .whoForButton{
   width: 10rem;
   margin: auto;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .whoForSection .brandPage{
-  height: 150px;
-  width: 180px;
-  border-radius: 10px;
+  height: 200px;
+  width: 200px;
+  border-radius: 40px;
   padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   transition: 0.5s ease;
-  background: skyblue;
+  background: #87CEEB;
+  box-shadow: 8px 8px #00B9B9;
+
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 160px auto;
 
   &:hover{
     transform: translateY(10px);
     background-color: teal;
+  }
+}
+
+
+.brandSwiper{
+  width: 90vw;
+}
+.swiperContainer{
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 50px;
+  justify-content: space-evenly;
+}
+.showAllBrandsBtn{
+  height: 60px;
+  width: 250px;
+  margin-top: 100px;
+}
+
+
+.sectionCustomerReviews{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 4rem;
+  align-items: center;
+  background: linear-gradient(90deg, aquamarine, skyblue);
+  perspective: 1000px;
+  padding: 4rem 0rem;
+}
+
+  .customersQuoteCard{
+    height: 350px;
+    width: 350px;
+    border-radius: 40px;
+    background-color: #FFFFFF;
+    padding: 40px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .customerImageName{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+
+      .customerImage{
+        height: 80px;
+        width: 80px;
+        background-color: silver;
+        border-radius: 50%;
+      }
+      .customeName{
+        font-size: 20px;
+      }
+    }
+
+    .reviewStars{
+      width: 100%;
+   
+    }
+
+    .reviewQuote{
+      width: 100%;
+     
+    }
+
+    .reviewNameDate{
+      width: 100%;
+    }
+
+    .reviewStars, .reviewQuote, .reviewNameDate {
+      font-size: 20px;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  }
+
+  .goldStar, .greyStar{
+    height: 50px;
+    width: 50px;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  }
+  .goldStar{
+    background-color: #FFC700;
+  }
+  .greyStar{
+    background-color: silver;
+  }
+
+
+
+
+.sectionEmailRegister{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+  align-items: center;
+  background: #EEEEEE;
+  perspective: 1000px;
+  padding: 4rem 0rem 4rem 0rem;
+
+  .emailBox{
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    height: 80px;
+    box-shadow: 6px 6px silver;
+    min-width: 750px;
   }
 }

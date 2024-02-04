@@ -1,15 +1,16 @@
 
 .swiper-button-next, .swiper-button-prev{ 
-    border-radius: 10px;
+  height: 60px;
+  width: 60px;
+    border-radius: 50%;
     padding: 10px;
-    background-color: teal;
+    background-color: #00B9B9;
     color: white;
-    font-weight: bold;
     transition: 0.5s ease;
   
     &:hover{
-        color: aquamarine;
-        transform: translateY(-10px);
+      background-color: teal;
+      transform: translateY(-10px);
     }
   }
 

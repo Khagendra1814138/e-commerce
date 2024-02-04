@@ -20,6 +20,7 @@ function WomensPage() {
                 <div className='womenTrendingCardsWrapper'> 
                   <img className="card"src={trendingCreps.productImage} alt='img'/>
                   <div className='productName'> {trendingCreps.productName} </div>
+                  <div className='productName'> £{trendingCreps.price} </div>
                 </div>
 
               ))}

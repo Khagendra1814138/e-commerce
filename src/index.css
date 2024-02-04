@@ -40,7 +40,7 @@ button{
   font-size: 20px;
   font-weight: bold;
   transition: 0.5s ease;
-  box-shadow: 3px 4px teal;
+  box-shadow: 3px 5px #005454;
   background: linear-gradient(65deg, pink, aqua);
 
   &:hover{
@@ -50,15 +50,17 @@ button{
 }
 
 h1{
-  margin: auto;
+  padding: 0;
+  margin: 0;
   font-size: 60px;
   text-align: center;
   font-weight: bold;
-  padding: 2rem;
   color: black;
   text-shadow: 2px 2px aquamarine;
 }
 h2{
+  padding: 0;
+  margin: 0;
   margin: auto;
   text-align: center;
 }

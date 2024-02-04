@@ -14,7 +14,7 @@ import Stan_Smith from "../../images/products/adidas/Stan_Smith_WhiteGreen85.avi
 export const AdidasProductsArray = [
     {
        id: 4,
-       productName: "Superstar",
+       productName: "Adidas Superstar",
        price: "90.00",
        productImage: adidasSuperstar,
        trending: "Yes",

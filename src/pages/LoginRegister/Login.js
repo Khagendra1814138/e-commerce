@@ -19,7 +19,7 @@ function LoginPage() {
       <div className="loginPage">   
 
         <box className = "formFrame">
-          <span className="welcome">🙏</span>
+          <span className="welcome">🔐</span>
           <div className="avatarIcon"><User size={130} color="black"/></div>
 
           <form onSubmit={handleSubmit}>

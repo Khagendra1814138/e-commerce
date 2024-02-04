@@ -2,12 +2,20 @@ import React from 'react';
 
 import "../../components/sideProductsFilter/sideProductsFilter.css";
 import "../../styles/NewArrivals.css";
-import "../../App.css"
+import "../../App.css";
+
+import TrendingHeaderImg from "../../images/brandHeader/newArrivals.webp";
 
 export default function NewArrivals() {
   return(
     <div className="NewArrivals">
-      <body className="snappingWrapper">
+      
+      <header className='brandHeader' style={{backgroundImage: `url(${TrendingHeaderImg})`}}>
+        <h1>Latest Arrival</h1>
+      </header>
+
+
+      {/* <body className="snappingWrapper">
 
         <div className="section">
 
@@ -36,7 +44,7 @@ export default function NewArrivals() {
           <div className="coverTR"></div>
           <div className="coverBL"></div>
           <div className="coverBR"></div>
-      </div>
+      </div> */}
 
     </div>
   );

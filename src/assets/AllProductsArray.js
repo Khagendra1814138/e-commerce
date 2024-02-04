@@ -38,7 +38,7 @@ import Stan_Smith from "../images/products/adidas/Stan_Smith_WhiteGreen85.avif"
 export const TotalProductsArray = [
  {
     id: 1,
-    productName: "Air Force 1",
+    productName: "Nike Air Force 1",
     price: "109.95",
     productImage: airForce1,
     trending: "Yes",
@@ -48,7 +48,7 @@ export const TotalProductsArray = [
  },
  {
     id: 2,
-    productName: "Air Jordan 1 Mid",
+    productName: "Nike Air Jordan 1 Mid",
     price: "114.95",
     productImage: airJordan1Mid,
     trending: "Yes",
@@ -58,7 +58,7 @@ export const TotalProductsArray = [
  },
  {
     id: 3,
-    productName: "Air Max 90",
+    productName: "Nike Air Max 90",
     price: "134.95",
     productImage: airMax90,
     trending: "No",
@@ -68,7 +68,7 @@ export const TotalProductsArray = [
  },
  {
     id: 4,
-    productName: "Superstar",
+    productName: "Adidas Superstar",
     price: "90.00",
     productImage: adidasSuperstar,
     trending: "Yes",
@@ -88,7 +88,7 @@ export const TotalProductsArray = [
  },
  {
     id: 6,
-    productName: "Air Jordan 3 Retro",
+    productName: "Nike Air Jordan 3 Retro",
     price: "189.95",
     productImage: airJordan3Retro,
     trending: "Yes",
@@ -118,7 +118,7 @@ export const TotalProductsArray = [
    },
    {
       id: 9,
-      productName: "Air Jordan 1 Low",
+      productName: "Nike Air Jordan 1 Low",
       price: "109.95",
       productImage: airJordan1Low,
       trending: "Yes",

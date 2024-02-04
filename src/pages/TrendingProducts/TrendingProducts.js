@@ -1,9 +1,9 @@
 import React from 'react';
 
+import "./trendingProducts.css";
 import "../ProductsByBrands/ProductsByBrands.css";
 
-import { Product } from '../MenSection/products';
-import { TrendingCreps } from '../../components/trendingShoesFilter';
+import { TrendingProductsSideFilter } from '../../components/sideProductsFilter/trendingSideProductsFilter';
 
 import TrendingHeaderImg from "../../images/brandHeader/trending.jpg";
 
@@ -11,17 +11,14 @@ import TrendingHeaderImg from "../../images/brandHeader/trending.jpg";
 function TrendingProductsPage() {
 
   return (
-    <div className="TrendingProductsPage">
+    <div className="trendingProductsPage">
 
       <header className='brandHeader' style={{backgroundImage: `url(${TrendingHeaderImg})`}}>
         <h1>Trending Creps</h1>
       </header>
      
       <div className='productDisplayWrapper'>
-        <div className="ProductDisplay"> {TrendingCreps.map((product) => (
-            <Product data={product}/>
-          ))} 
-        </div>
+        <TrendingProductsSideFilter/>
       </div>
     </div>
   );

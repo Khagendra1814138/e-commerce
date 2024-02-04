@@ -31,9 +31,9 @@ export const CartPage = () => {
 
       {totalAmount > 0 ? (
         <div className="checkoutFrame">
-          <h1>Summary</h1>
+          <h1>Basket Total</h1>
           <div>
-            <p>Total</p>
+            <p>SUBTOTAL: </p>
             <p>£{totalAmount}</p>
           </div>
           <button> Checkout </button>
