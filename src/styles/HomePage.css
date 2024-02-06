@@ -259,16 +259,16 @@
       align-items: center;
       flex-direction: column;
       gap: 10px;
+    }
 
-      .customerImage{
-        height: 80px;
-        width: 80px;
-        background-color: silver;
-        border-radius: 50%;
-      }
-      .customeName{
-        font-size: 20px;
-      }
+    .customerImage{
+      height: 80px;
+      width: 80px;
+      background-color: silver;
+      border-radius: 50%;
+    }
+    .customeName{
+      font-size: 20px;
     }
 
     .reviewStars{
