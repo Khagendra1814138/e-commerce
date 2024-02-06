@@ -268,10 +268,7 @@
   } 
 
   .customersQuoteCard .customerImageNameFrame .customeName{
-    height: 80px;
-    width: 80px;
-    background-color: silver;
-    border-radius: 50%;
+    font-size: 20px;
   } 
  
   .customersQuoteCard  .reviewStarsFrame{
