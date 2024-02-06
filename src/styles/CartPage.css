@@ -1,14 +1,15 @@
 
 .CartPage{
-    height: auto;
-    width: auto;
-    margin: auto;
     padding-top: 6rem;
     padding-bottom: 10rem;
-
     display: flex;
-    flex-direction: row;
+    gap: 300px;
+    flex-direction: column;
 }
+.basketFrame{
+    display: flex;
+}
+
 .cartFrame{
     width: 90%;
     display: flex;
@@ -69,7 +70,11 @@
 }
 
 
-
+.suggestionProductsFrame{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 .emptyBagFrame{
     width: 100%;

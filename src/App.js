@@ -15,6 +15,7 @@ import MensPage from './pages/MenSection/Men';
 import KidsPage from './pages/KidSection/Kids';
 import WomensPage from './pages/WomenSection/Women';
 import NewArrivals from './pages/NewSection/NewArrivals';
+import { FaqPage } from './pages/FAQ/Faq';
 
 import TrendingProductsPage from './pages/TrendingProducts/TrendingProducts';
 
@@ -23,6 +24,7 @@ import NikeProducts from './pages/ProductsByBrands/NikeProducts';
 import PumaProducts from './pages/ProductsByBrands/PumaProducts';
 
 import { CartPage } from './pages/Cart/Cart';
+import { CheckoutPage } from './pages/CheckoutPage/CheckoutPage';
 import { FavouritePage } from './pages/FavouriteBag/Favourite';
 import { ShopContextProvider } from './context/shop-context';
 
@@ -42,10 +44,11 @@ function App() {
             <Route path='/Women' element={<WomensPage/>} />
             <Route path='/Kids' element={<KidsPage/>} />
             <Route path='/Cart' element={<CartPage/>} />
+            <Route path='/CheckoutPage' element={<CheckoutPage/>} />
             <Route path='/Favourite' element={<FavouritePage/>} />
             <Route path='/Login' element={<LoginPage/>} />
             <Route path='/Register' element={<RegisterPage/>} />
-
+            <Route path='/FaqPage' element={<FaqPage/>} />
             <Route path='/TrendingProducts' element={<TrendingProductsPage/>} />
 
             <Route path='/AdidasProducts' element={<AdidasProducts/>} />

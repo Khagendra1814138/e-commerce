@@ -3,5 +3,6 @@ export const menuData = [
     {title: "W O M E N", link: "/Women",},
     {title: "K I D S", link: "/kids",},
     {title: "N E W", link: "/NewArrivals"},
-    {title: "T R E N D I N G", link: "/TrendingProducts"}
+    {title: "T R E N D I N G", link: "/TrendingProducts"},
+    {title: "F A Q", link: "/FaqPage"}
 ];
