@@ -101,12 +101,12 @@ function Home() {
       <h1>HAPPY CUSTOMERS</h1>
       <section className='sectionCustomerReviews'>
         <div className='customersQuoteCard'>
-          <div className='customerImageName'>
+          <div className='customerImageNameFrame'>
             <div className='customerImage'></div>
             <div className='customeName'>Rhian</div>
           </div>
 
-          <div className='reviewStars'>
+          <div className='reviewStarsFrame'>
             <div className='goldStar'></div>
             <div className='goldStar'></div>
             <div className='goldStar'></div>
@@ -121,12 +121,12 @@ function Home() {
         </div>
 
         <div className='customersQuoteCard'>
-          <div className='customerImageName'>
+          <div className='customerImageNameFrame'>
             <div className='customerImage'></div>
             <div className='customeName'>Amy</div>
           </div>
 
-          <div className='reviewStars'>
+          <div className='reviewStarsFrame'>
             <div className='goldStar'></div>
             <div className='goldStar'></div>
             <div className='goldStar'></div>
@@ -141,12 +141,12 @@ function Home() {
         </div>
 
         <div className='customersQuoteCard'>
-          <div className='customerImageName'>
+          <div className='customerImageNameFrame'>
             <div className='customerImage'></div>
             <div className='customeName'>Jas</div>
           </div>
 
-          <div className='reviewStars'>
+          <div className='reviewStarsFrame'>
             <div className='goldStar'></div>
             <div className='goldStar'></div>
             <div className='goldStar'></div>
