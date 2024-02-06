@@ -250,46 +250,49 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .customersQuoteCard .customerImageNameFrame{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
 
-    .customerImageNameFrame{
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      gap: 10px;
-    }
+  .customersQuoteCard .customerImageNameFrame .customerImage{
+    height: 80px;
+    width: 80px;
+    background-color: silver;
+    border-radius: 50%;
+  } 
 
-    .customerImage{
-      height: 80px;
-      width: 80px;
-      background-color: silver;
-      border-radius: 50%;
-    }
-    .customeName{
-      font-size: 20px;
-    }
+  .customersQuoteCard .customerImageNameFrame .customeName{
+    height: 80px;
+    width: 80px;
+    background-color: silver;
+    border-radius: 50%;
+  } 
+ 
+  .customersQuoteCard  .reviewStarsFrame{
+    width: 100%;
+    display: flex;
+  }
 
-    .reviewStarsFrame{
-      width: 100%;
-      display: flex;
-    }
+  .customersQuoteCard .reviewQuote{
+    width: 100%;
+  }
 
-    .reviewQuote{
-      width: 100%;
-    }
+  .customersQuoteCard .reviewNameDate{
+    width: 100%;
+  }
 
-    .reviewNameDate{
-      width: 100%;
-    }
-
-    .reviewStars, .reviewQuote, .reviewNameDate {
-      font-size: 20px;
-      display: flex;
-      gap: 10px;
-      justify-content: center;
-      align-items: flex-start;
-    }
+  .customersQuoteCard  .reviewStarsFrame, .reviewQuote, .reviewNameDate {
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
   }
 
   .goldStar, .greyStar{
