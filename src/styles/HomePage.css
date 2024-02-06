@@ -252,6 +252,7 @@
     align-items: center;
 
     .customerImageName{
+      border: 1px solid rebeccapurple;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -272,7 +273,7 @@
 
     .reviewStars{
       width: 100%;
-   
+      display: flex;
     }
 
     .reviewQuote{
