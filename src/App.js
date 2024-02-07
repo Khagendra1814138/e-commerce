@@ -16,8 +16,9 @@ import KidsPage from './pages/KidSection/Kids';
 import WomensPage from './pages/WomenSection/Women';
 import NewArrivals from './pages/NewSection/NewArrivals';
 import { FaqPage } from './pages/FAQ/Faq';
-
+import { ProductMainPage } from './pages/ProductMainPage/ProductMainPage';
 import TrendingProductsPage from './pages/TrendingProducts/TrendingProducts';
+import { AllBrandsPage } from './pages/AllBrandsPage/AllBrandsPage';
 
 import AdidasProducts from './pages/ProductsByBrands/AdidasProducts';
 import NikeProducts from './pages/ProductsByBrands/NikeProducts';
@@ -50,7 +51,9 @@ function App() {
             <Route path='/Register' element={<RegisterPage/>} />
             <Route path='/FaqPage' element={<FaqPage/>} />
             <Route path='/TrendingProducts' element={<TrendingProductsPage/>} />
-
+            <Route path='/ProductMainPage' element={<ProductMainPage/>} />
+            <Route path='/AllBrandsPage' element={<AllBrandsPage/>} />
+            
             <Route path='/AdidasProducts' element={<AdidasProducts/>} />
             <Route path='/NikeProducts' element={<NikeProducts/>} />
             <Route path='/PumaProducts' element={<PumaProducts/>} />

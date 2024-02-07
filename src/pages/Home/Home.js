@@ -95,7 +95,7 @@ function Home() {
       <h1>BRANDS YOU LOVE</h1>
       <section className='whoForSection'>
         <ShopByBrand/>
-        <button className='showAllBrandsBtn'>Show All Brands</button>
+        <button onClick={() => navigate("/AllBrandsPage")} className='showAllBrandsBtn'>Show All Brands</button>
       </section>
 
       <h1>HAPPY CUSTOMERS</h1>

@@ -55,7 +55,7 @@
     }
 }
 .checkOutFrame label{
-    width: min-content;
+    width: max-content;
     font-size: 20px;
     font-weight: bold;
 }
@@ -87,6 +87,7 @@
     top: 0;
     right: 100px;
     padding: 1rem;
+    padding-bottom: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,15 +98,6 @@
 }
 .summaryFrame h1{
     font-size: 50px;
-}
-
-.summaryFrame div{
-    width: 100%;
-    border-bottom: 2px solid #D9D9D9;
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
-    font-weight: bold;
 }
 
 .summaryFrame button{
@@ -119,13 +111,33 @@
     }
 }
 
-.summaryInputWrapper{
+.summaryDetailWrapper{
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .summaryFrame .discountApplyBtn{
     border-radius: 0px;
     width: min-content;
+    margin-top: 0px;
+}
+
+.summaryUnderlineWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #D9D9D9;
+}
+
+.summaryDiscountInputWrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #D9D9D9;
 }

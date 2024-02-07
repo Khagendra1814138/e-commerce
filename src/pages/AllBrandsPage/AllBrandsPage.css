@@ -1,0 +1,47 @@
+.AllBrandPages{
+    padding-bottom: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.brandsHeader h1{
+    color: white;
+    text-shadow: 4px 4px teal;
+}
+.brandsHeader h2{
+    color: white;
+}
+.brandsHeader{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(65deg, #00B9B9, hwb(161 17% 6% / 0.5));
+}
+
+.brandsGrid{
+    width: 70%;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 40px;
+}
+
+.brandButton{
+    height: 200px;
+    width: 100%;
+    background-color: skyblue;
+    background-position: center;
+    background-size: 160px;
+    background-repeat: no-repeat;
+    box-shadow: 8px 8px #00B9B9;
+    &:hover{
+        background-color: teal;
+    }
+}

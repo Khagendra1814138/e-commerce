@@ -93,6 +93,7 @@
       display: grid;
       grid-auto-flow: column;
       grid-auto-columns: 35%;
+      gap: 40px;
       align-items: flex-start;
       justify-content: flex-start;
       
@@ -104,7 +105,7 @@
 
 /* CUSTOME SCROOL BAR */
   .trendingProduct::-webkit-scrollbar {
-    height: 1.5rem;
+    height: 1.2rem;
   }
   
   .trendingProduct::-webkit-scrollbar-track {

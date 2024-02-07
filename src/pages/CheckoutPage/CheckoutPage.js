@@ -104,34 +104,34 @@ export const CheckoutPage = () => {
 
                 <div className="summaryFrame">
                     <h1>SUMMARY</h1>
-                    <div className="summaryInputWrapper">
+                    <div className="summaryUnderlineWrapper">
                         <label>SHIPPING COST:</label>
                         <label>£{shippingCost}</label>     
                     </div>
 
-                    <div className="summaryInputWrapper">
+                    <div className="summaryDetailWrapper">
                         <label>DISCOUNT:</label>
                         <label>£{discountCode}</label>     
                     </div>
 
-                    <div className="summaryInputWrapper">
+                    <div className="summaryDiscountInputWrapper">
                         <input type="input" placeholder="VOU-3MB9-RNSK-KPXK-3QBWL"></input>
                         <button className="discountApplyBtn">APPLY</button>   
                     </div>
 
-                    <div className="summaryInputWrapper">
+                    <div className="summaryDetailWrapper">
                         <label>Subtotal: </label>
                         <label>£{totalAmount}</label>
                     </div>
 
-                    <div className="summaryInputWrapper">
+                    <div className="summaryUnderlineWrapper">
                         <label>Discount: </label>
                         <label>£{discountCode}</label>
                     </div>
 
-                    <div className="summaryInputWrapper">
+                    <div className="summaryUnderlineWrapper">
                         <label>TOTAL: </label>
-                        <label>£{finalTotalCost}</label>
+                        <label>£{(Math.round(finalTotalCost * 100) / 100).toFixed(2)}</label>
                     </div>
                     
                     <button>Place Order</button>

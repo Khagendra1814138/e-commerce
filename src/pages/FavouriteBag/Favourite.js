@@ -14,7 +14,7 @@ export const FavouritePage = () => {
             </div>
 
 
-            <div className="emptyBagFrame">
+            <div className="emptyFavouriteBagFrame">
             <h1> Your favourite bag is empty :( </h1>
             <button onClick={() => navigate("/")}> Continue Shopping </button>
             </div>
