@@ -15,6 +15,7 @@ import MensPage from './pages/MenSection/Men';
 import KidsPage from './pages/KidSection/Kids';
 import WomensPage from './pages/WomenSection/Women';
 import NewArrivals from './pages/NewSection/NewArrivals';
+import { SaleProductsPage } from './pages/SalesPage/SalesPage';
 import { FaqPage } from './pages/FAQ/Faq';
 import { ProductMainPage } from './pages/ProductMainPage/ProductMainPage';
 import TrendingProductsPage from './pages/TrendingProducts/TrendingProducts';
@@ -51,6 +52,7 @@ function App() {
             <Route path='/Register' element={<RegisterPage/>} />
             <Route path='/FaqPage' element={<FaqPage/>} />
             <Route path='/TrendingProducts' element={<TrendingProductsPage/>} />
+            <Route path='/SalesPage' element={<SaleProductsPage/>} />
             <Route path='/ProductMainPage' element={<ProductMainPage/>} />
             <Route path='/AllBrandsPage' element={<AllBrandsPage/>} />
             

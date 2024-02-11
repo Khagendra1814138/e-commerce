@@ -12,7 +12,7 @@ import { colorsList } from "./colorsList";
 import { sportList } from "./sporttype";
 
 // import {AllProductsArray} from "../../assets/productsArray/productsArrayMerge";
-import { TrendingCreps } from "../trendingShoesFilter";
+import { TrendingCreps } from "../../pages/TrendingProducts/trendingShoesFilter";
 
 // export const BrandFilterCreps = PRODUCTS.filter(filteredCreps => {
 //     return filteredCreps.brand.includes(selectedBrand) && filteredCreps.color.includes(selectedColor);

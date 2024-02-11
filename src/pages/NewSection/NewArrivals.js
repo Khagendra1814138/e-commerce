@@ -6,14 +6,20 @@ import "../../App.css";
 
 import TrendingHeaderImg from "../../images/brandHeader/newArrivals.webp";
 
+import { NewArrivalProducts } from './newProductsSideFilter';
+
 export default function NewArrivals() {
   return(
     <div className="NewArrivals">
-      
-      <header className='brandHeader' style={{backgroundImage: `url(${TrendingHeaderImg})`}}>
-        <h1>Latest Arrival</h1>
+       <header className="newProductsHeader">
+        <h1>LATEST ARRIVAL</h1>
+        <h2>Refresh your looks with the latest drops.</h2>
       </header>
 
+      <image className='brandHeader' style={{backgroundImage: `url(${TrendingHeaderImg})`}}>
+      </image>
+
+      <NewArrivalProducts/>
 
       {/* <body className="snappingWrapper">
 

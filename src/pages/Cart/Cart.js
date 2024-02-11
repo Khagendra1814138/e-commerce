@@ -6,7 +6,7 @@ import "../../styles/CartPage.css";
 import { TotalProductsArray } from "../../assets/AllProductsArray";
 import { ShopContext } from "../../context/shop-context";
 import { CartItem } from "./cart-item";
-import { TrendingCreps } from "../../components/trendingShoesFilter";
+import { TrendingCreps } from "../TrendingProducts/trendingShoesFilter";
 
 import {useNavigate} from "react-router-dom";
 

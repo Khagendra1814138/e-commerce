@@ -14,7 +14,7 @@ import luka1 from "../images/products/nike/luka-1-basketball-BluePurple.jpg"
 import pumaRSX3D from "../images/products/puma/pumaRSX3D.webp"
 import pumaSuede from "../images/products/puma/pumaSuede.webp"
 import RSXGeek from "../images/products/puma/RS-XGeek.avif"
-import RSXEfektTurbo from "../images/products/puma/RS-X Efekt Turbo.avif"
+import RSXEfektTurbo from "../images/products/puma/RS-XEfektTurbo.avif"
 import SuedeClassicPink from "../images/products/puma/Suede-ClassicPink.avif"
 import SuedeClassicRed from "../images/products/puma/Suede-ClassicRed.avif"
 import ForeverRunNITRO from "../images/products/puma/ForeverRun-NITRO-Running-Orange140.avif"
@@ -286,6 +286,8 @@ export const TotalProductsArray = [
       color: "White, Green",
       sportType: "Lifestyle",
    },
+
+   
    {
       id: 26,
       productName: "Nik Infinityrn 4",
@@ -335,5 +337,64 @@ export const TotalProductsArray = [
       brand: "Nike",
       color: "Blue, Purple",
       sportType: "Basketball",
+   },
+
+
+
+
+   {
+      id: 31,
+      productName: "Fresh Foam X 1080 v13",
+      price: "160.00",
+      productImage: airForce1,
+      trending: "No",
+      brand: "New Balance",
+      color: "Red",
+      sportType: "Running",
+      status: "New",
+   },
+   {
+      id: 51,
+      productName: "New Balance 550",
+      price: "120.00",
+      productImage: airJordan1Mid,
+      trending: "No",
+      brand: "New Balance",
+      color: "Pink",
+      sportType: "Lifestyle",
+      status: "",
+   },
+   {
+      id: 52,
+      productName: "New Balance 530",
+      price: "110.00",
+      productImage: airMax90,
+      trending: "No",
+      brand: "New Balance",
+      color: "Red, Grey",
+      sportType: "Lifestyle",
+      status: "",
+   },
+   {
+      id: 53,
+      productName: "New Balance 990v6",
+      price: "220.00",
+      productImage: nikeDunkLow,
+      trending: "No",
+      brand: "New Balance",
+      color: "Grey",
+      sportType: "Lifestyle",
+      status: "",
+   },
+   {
+      id: 54,
+      productName: "FuelCell SuperComp Elite v4",
+      price: "260.00",
+      productImage: airJordan3Retro,
+      trending: "No",
+      brand: "New Balance",
+      color: "Green, Orange",
+      sportType: "Running",
+      status: "New",
    },
 ];

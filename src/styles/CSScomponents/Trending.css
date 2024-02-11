@@ -49,7 +49,7 @@
     justify-content: flex-start;
     align-items: center;
     padding: 2rem;
-    background: linear-gradient(0deg, PeachPuff, skyblue);
+    background: linear-gradient(0deg, #F1FFB9, skyblue);
 }
 
 .trendingThisWeekSection h1, .trendingThisWeekSection_Women h1, .trendingThisWeekSection_Kids h1 {

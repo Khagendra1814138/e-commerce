@@ -13,7 +13,7 @@ import luka1 from "../../images/products/nike/luka-1-basketball-BluePurple.jpg"
 
 export const NikeProductsArray = [
     {
-       id: 1,
+       id: 20,
        productName: "Air Force 1",
        price: "109.95",
        productImage: airForce1,
@@ -21,9 +21,10 @@ export const NikeProductsArray = [
        brand: "Nike",
        color: "White, Blue",
        sportType: "Lifestyle",
+       status: "",
     },
     {
-       id: 2,
+       id: 21,
        productName: "Air Jordan 1 Mid",
        price: "114.95",
        productImage: airJordan1Mid,
@@ -31,9 +32,10 @@ export const NikeProductsArray = [
        brand: "Nike",
        color: "White, Green",
        sportType: "Lifestyle",
+       status: "",
     },
     {
-       id: 3,
+       id: 22,
        productName: "Air Max 90",
        price: "134.95",
        productImage: airMax90,
@@ -41,9 +43,10 @@ export const NikeProductsArray = [
        brand: "Nike",
        color: "White, Red",
        sportType: "Lifestyle",
+       status: "",
     },
     {
-       id: 5,
+       id: 23,
        productName: "Nike Dunk Low",
        price: "99.95",
        productImage: nikeDunkLow,
@@ -51,9 +54,10 @@ export const NikeProductsArray = [
        brand: "Nike",
        color: "White, Black",
        sportType: "Lifestyle",
+       status: "New",
     },
     {
-       id: 6,
+       id: 24,
        productName: "Air Jordan 3 Retro",
        price: "189.95",
        productImage: airJordan3Retro,
@@ -61,9 +65,10 @@ export const NikeProductsArray = [
        brand: "Nike",
        color: "White, Blue",
        sportType: "Lifestyle",
+       status: "",
     },
       {
-         id: 9,
+         id: 25,
          productName: "Air Jordan 1 Low",
          price: "109.95",
          productImage: airJordan1Low,
@@ -71,6 +76,7 @@ export const NikeProductsArray = [
          brand: "Nike",
          color: "White, Blue",
          sportType: "Lifestyle",
+         status: "",
       },
       {
          id: 26,
@@ -81,6 +87,7 @@ export const NikeProductsArray = [
          brand: "Nike",
          color: "White",
          sportType: "Running",
+         status: "",
       },
       {
          id: 27,
@@ -91,6 +98,7 @@ export const NikeProductsArray = [
          brand: "Nike",
          color: "White",
          sportType: "Running",
+         status: "New",
       },
       {
          id: 28,
@@ -101,6 +109,7 @@ export const NikeProductsArray = [
          brand: "Nike",
          color: "Blue",
          sportType: "Running",
+         status: "",
       },
       {
          id: 29,
@@ -111,6 +120,7 @@ export const NikeProductsArray = [
          brand: "Nike",
          color: "White",
          sportType: "Basketball",
+         status: "New",
       },
       {
          id: 30,
@@ -121,5 +131,6 @@ export const NikeProductsArray = [
          brand: "Nike",
          color: "Blue, Purple",
          sportType: "Basketball",
+         status: "Sale",
       },
    ];

@@ -13,9 +13,13 @@ function TrendingProductsPage() {
   return (
     <div className="trendingProductsPage">
 
-      <header className='brandHeader' style={{backgroundImage: `url(${TrendingHeaderImg})`}}>
-        <h1>Trending Creps</h1>
+      <header className="trendingProductsHeader">
+        <h1>TRENDING FOOTWEAR</h1>
+        <h2>Look fresh with the most loved creps.</h2>
       </header>
+
+      <image className='brandHeader' style={{backgroundImage: `url(${TrendingHeaderImg})`}}>
+      </image>
      
       <div className='productDisplayWrapper'>
         <TrendingProductsSideFilter/>

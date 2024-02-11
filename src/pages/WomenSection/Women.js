@@ -2,9 +2,9 @@ import React from "react";
 
 import "../../styles/WomensPage.css";
 import "../../styles/ProductCard.css";
-import "../../styles/CSScomponents/Trending.css"
+import "../../styles/CSScomponents/Trending.css";
 
-import { TrendingCreps } from "../../components/trendingShoesFilter";
+import { TrendingCreps } from "../TrendingProducts/trendingShoesFilter";
 import { SideProductsFilter } from "../../components/sideProductsFilter/sideProductsFilter";
 
 function WomensPage() {

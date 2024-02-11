@@ -1,25 +1,16 @@
 import React,  { useState } from "react";
 
-import "./sideProductsFilter.css";
-
 import { Menu } from 'react-feather';
 import { Minimize2 } from 'react-feather';
 
-// import { PRODUCTS } from "../../pages/MenSection/MensProduct";
 import { Product } from "../../pages/MenSection/products";
-import { brandsList } from "./brandsList";
-import { colorsList } from "./colorsList";
-import { sportList } from "./sporttype";
+import { brandsList } from "../../components/sideProductsFilter/brandsList";
+import { colorsList } from "../../components/sideProductsFilter/colorsList";
+import { sportList } from "../../components/sideProductsFilter/sporttype";
 
-import {AllProductsArray} from "../../assets/productsArray/productsArrayMerge";
-// import { TotalProductsArray } from "../../assets/AllProductsArray";
+import { SaleProductsArray } from "./saleProductArray";
 
-// export const BrandFilterCreps = PRODUCTS.filter(filteredCreps => {
-//     return filteredCreps.brand.includes(selectedBrand) && filteredCreps.color.includes(selectedColor);
-//   }
-// );
-
-export const  SideProductsFilter = () =>{
+export const  SalesProducts = () =>{
 
     const [show, setShow] = useState(true);
 
@@ -27,7 +18,7 @@ export const  SideProductsFilter = () =>{
     const [selectedColor, setSelectedColor] = useState("");
     const [selectedSport, setSelectedSport] = useState("");
 
-    const FilterCreps = AllProductsArray.filter(filteredCreps => {
+    const SalesCrepsOnly = SaleProductsArray.filter(filteredCreps => {
             return filteredCreps.brand.includes(selectedBrand) && 
             filteredCreps.color.includes(selectedColor) && 
             filteredCreps.sportType.includes(selectedSport); 
@@ -58,7 +49,7 @@ export const  SideProductsFilter = () =>{
                         </select>
                     </box>
 
-                    <box className="filterOptions"> Colors 
+                    <box className="filterOptions"> Colors wassa
                         <select className="selectorFrame"
                             multiple={true}
                             value={selectedColor}
@@ -95,12 +86,10 @@ export const  SideProductsFilter = () =>{
                 }
             </div>
 
-            <div className="ProductDisplay"> {FilterCreps.map((product) => (
+            <div className="ProductDisplay"> {SalesCrepsOnly.map((product) => (
                     <Product data={product}/>
                 ))} 
             </div>
         </section>
     );
 };
-
-

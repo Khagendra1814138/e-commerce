@@ -1,5 +1,5 @@
 
-import { AllProductsArray } from "../assets/productsArray/productsArrayMerge";
+import { AllProductsArray } from "../../assets/productsArray/productsArrayMerge";
 
 
 export const TrendingCreps = AllProductsArray.filter(trendingProducts => {

@@ -2,6 +2,23 @@
     padding-bottom: 20rem;
 }
 
+.NewArrivals h1{
+    color: white;
+    text-shadow: 4px 4px teal;
+}
+.NewArrivals h2{
+    color: white;
+}
+.newProductsHeader{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(65deg, #00B9B9, hwb(161 17% 6% / 0.5));
+}
 /* .NewArrivals body, html {
     scroll-behavior: smooth;
     scroll-snap-type: y proximity;

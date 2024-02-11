@@ -5,7 +5,7 @@ import "./ProductMainPage.css";
 import { ArrowUp } from 'react-feather';
 import { ArrowDown } from 'react-feather';
 
-import { TrendingCreps } from "../../components/trendingShoesFilter";
+import { TrendingCreps } from "../TrendingProducts/trendingShoesFilter";
 
 export const ProductMainPage = () => {
     // const [show, setShow] = useState (false);

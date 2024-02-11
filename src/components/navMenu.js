@@ -1,9 +1,10 @@
 export const menuData = [
-    {title: "M E N", link: "/Men",},
-    {title: "W O M E N", link: "/Women",},
-    {title: "K I D S", link: "/kids",},
-    {title: "N E W", link: "/NewArrivals"},
-    {title: "T R E N D I N G", link: "/TrendingProducts"},
-    {title: "F A Q", link: "/FaqPage"},
+    {title: "MEN", link: "/Men",},
+    {title: "WOMEN", link: "/Women",},
+    {title: "KIDS", link: "/kids",},
+    {title: "NEW", link: "/NewArrivals"},
+    {title: "TRENDING", link: "/TrendingProducts"},
+    {title: "SALES", link: "/SalesPage"},
+    {title: "FAQ", link: "/FaqPage"},
     {title: "product", link: "/ProductMainPage"},
 ];

@@ -10,7 +10,8 @@ import Women from "../../images/home/womens.jpg";
 import Kids from "../../images/home/kids.jpg";
 
 
-import { TrendingCreps } from "../../components/trendingShoesFilter";
+import { TrendingCreps } from '../TrendingProducts/trendingShoesFilter';
+import { NewProducts } from '../NewSection/newProductsArray';
 
 import HomeSwiper from './homeSwiper';
 import { ShopByBrand } from './brandSwiper';
@@ -42,7 +43,7 @@ function Home() {
           <h2>TRENDING</h2>
           <br></br>
           <br></br> 
-          <p>Refresh your rotation with our latest drop.</p>
+          <p>Shop some of the most viewed and desired products by our customers.</p>
           <button onClick={() => navigate("/TrendingProducts")}>Shop</button>
         </div>
 
@@ -59,21 +60,21 @@ function Home() {
 
       <section className='TrendingSection'>
         <div className='trendingProduct'>
-          {TrendingCreps.map((trendingCreps) => (
+          {NewProducts.map((newCreps) => (
             <image> 
-                <div className="card" style={{backgroundImage: `url(${trendingCreps.productImage})`}} alt='img'></div>
-                <div className='productName'> {trendingCreps.productName}</div>
-                <div className='productPrice'> £{trendingCreps.price}</div>
+                <div className="card" style={{backgroundImage: `url(${newCreps.productImage})`}} alt='img'></div>
+                <div className='productName'> {newCreps.productName}</div>
+                <div className='productPrice'> £{newCreps.price}</div>
             </image>
           ))}
         </div>
 
         <div className='trendingInformationFrame'>
-          <h2>NEW ARRIVALS</h2>
+          <h2>NEW CREPS</h2>
           <br></br>
           <br></br> 
-          <p>Shop some of the most viewed and desired products by our customers.</p>
-          <button onClick={() => navigate("/TrendingProducts")}>Shop</button>
+          <p>Refresh your rotation with our latest drop.</p>
+          <button onClick={() => navigate("/NewArrivals")}>Shop</button>
         </div>
       </section>
 

@@ -7,14 +7,15 @@ import { Heart } from 'react-feather';
 import { ShopContext } from "../../context/shop-context";
 
 export const Product = (props) => {
-    const { id, productName, price, productImage} = props.data;
+    const { id, productName, price, productImage, status} = props.data;
     const { addToCart, cartItems} = useContext (ShopContext);
-
     const cartItemAmount = cartItems[id];
 
     return (
         <card className="productCard">
-            <img src={productImage} alt="productImage"/>
+            <image style={{backgroundImage: `url(${productImage})`}} className="productImage">
+                <div className={status === "New" ? "productStatus newColor" : "productStatus saleColor"}>{status}</div>
+            </image>
             <detail className="detailFrame">
                 <div className="productDetail">
                     <div className="productName">{productName}</div>

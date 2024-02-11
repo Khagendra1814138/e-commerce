@@ -1,15 +1,15 @@
-.trendingProductsPage{
+.salesPage{
     padding-bottom: 20rem;
 }
 
-.trendingProductsPage h1{
+.salesProductsHeader h1{
     color: white;
-    text-shadow: 4px 4px teal;
+    text-shadow: 4px 4px #FB8585;
 }
-.trendingProductsPage h2{
+.salesProductsHeader h2{
     color: white;
 }
-.trendingProductsHeader{
+.salesProductsHeader {
     height: 250px;
     width: 100%;
     display: flex;

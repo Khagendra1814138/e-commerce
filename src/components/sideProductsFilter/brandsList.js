@@ -15,4 +15,8 @@ export const brandsList = [
       label: "Puma",
       value: "Puma",
     },
+    {
+      label: "New Balance",
+      value: "New Balance",
+    },
 ];

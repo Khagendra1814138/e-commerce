@@ -1,6 +1,10 @@
 
 import { AllProductsArray } from "../../assets/productsArray/productsArrayMerge";
 
+export const NewBalanceProducts = AllProductsArray.filter(allNewBalanceProdcuts => {
+    return allNewBalanceProdcuts.brand === "New Balance";
+})
+
 export const AdidasCreps = AllProductsArray.filter(adidasProducts => {
     return adidasProducts.brand === "Adidas";
 });
